@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# But not these files/folders
+!.gitignore
+!requirements.txt
+!README.md
+!scripts/
+!notebooks/
+!results/
+!notebooks/*.ipynb
