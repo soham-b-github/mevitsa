@@ -1,11 +1,13 @@
-# Ignore everything
-*
+# Ignore
+.ipynb_checkpoints
+google-cloud-vision-OCR-api
+notebooks/.ipynb_checkpoints
 
 # But not these files/folders
-!.gitignore
-!requirements.txt
-!README.md
-!scripts/
-!notebooks/
-!results/
-!notebooks/*.ipynb
+# !.gitignore/
+# !requirements.txt
+# !README.md
+# !scripts/
+# !notebooks/
+# !results/
+# !notebooks/*.ipynb
