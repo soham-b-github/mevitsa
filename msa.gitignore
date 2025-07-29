@@ -1,13 +1,16 @@
-# Ignore
-.ipynb_checkpoints
-google-cloud-vision-OCR-api
-notebooks/.ipynb_checkpoints
+# Ignore everything inside ipynb checkpoints
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
 
-# But not these files/folders
-# !.gitignore/
-# !requirements.txt
-# !README.md
-# !scripts/
-# !notebooks/
-# !results/
-# !notebooks/*.ipynb
+# Ignore unwanted folder
+google-cloud-vision-OCR-api/
+
+# Allowlisted files/folders
+!.gitignore
+!requirements.txt
+!README.md
+!scripts/
+!notebooks/
+!results/
+!notebooks/*.ipynb
+

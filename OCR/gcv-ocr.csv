@@ -307,9 +307,9 @@ NEWS
 உண்டாக்கும் என்பதற்கு
 இந்தியாவே சான்று; இந்தியாவின்
 நிலை கவலை அளிக்கிறது!”","[{'x': 20, 'y': 9}, {'x': 216, 'y': 9}, {'x': 216, 'y': 214}, {'x': 20, 'y': 214}]",negative
-negative_081.jpg,/kaggle/input/musait/basket/negative_081.jpg,1,EARTHQUAKE,"[{'x': 104, 'y': 242}, {'x': 670, 'y': 242}, {'x': 670, 'y': 353}, {'x': 104, 'y': 353}]",negative
+negative_081.jpg,/kaggle/input/musait/basket/negative_081.jpg,1,EARTHQUAKE,"[{'x': 104, 'y': 241}, {'x': 670, 'y': 241}, {'x': 670, 'y': 353}, {'x': 104, 'y': 353}]",negative
 negative_082.jpg,/kaggle/input/musait/basket/negative_082.jpg,0,,[],negative
-negative_083.jpg,/kaggle/input/musait/basket/negative_083.jpg,1,EARTHQUAKE,"[{'x': 104, 'y': 242}, {'x': 670, 'y': 242}, {'x': 670, 'y': 353}, {'x': 104, 'y': 353}]",negative
+negative_083.jpg,/kaggle/input/musait/basket/negative_083.jpg,1,EARTHQUAKE,"[{'x': 104, 'y': 241}, {'x': 670, 'y': 241}, {'x': 670, 'y': 353}, {'x': 104, 'y': 353}]",negative
 negative_084.jpeg,/kaggle/input/musait/basket/negative_084.jpeg,1,"Murali_rout
 I don't need your love
 cause I already cried enough","[{'x': 63, 'y': 328}, {'x': 551, 'y': 328}, {'x': 551, 'y': 717}, {'x': 63, 'y': 717}]",negative
@@ -1633,17 +1633,18 @@ Travelled lonely road:
 PRINCESS TO
 CORSEDD BA","[{'x': 0, 'y': 0}, {'x': 467, 'y': 0}, {'x': 467, 'y': 372}, {'x': 0, 'y': 372}]",negative
 negative_251.jpg,/kaggle/input/musait/basket/negative_251.jpg,1,"Police and villagers in all-night search for missing girl
-BODY FOUND IN WOOD
+BODY FOUND IN
 Missing schoolgirl lived here Tragedy in
 isolated spot
 at Penllergaer
+WOOD
 Search in woodland area
 LONDON FLOUR RUSH
 Master Bakers
-ppose rationing off 'Smalls
-A
 Cargo ship
 hit rock
+ppose rationing off 'Smalls
+A
 Local reactions
 Rival applicants for
 Mondays
@@ -1679,7 +1680,7 @@ negative_255.jpg,/kaggle/input/musait/basket/negative_255.jpg,1,"BAD
 INTENTIONS","[{'x': 30, 'y': 129}, {'x': 210, 'y': 129}, {'x': 210, 'y': 197}, {'x': 30, 'y': 197}]",negative
 negative_256.jpg,/kaggle/input/musait/basket/negative_256.jpg,1,"NDTV
 Two Buildings Collapse In
-Malad & Fort Area","[{'x': 6, 'y': 63}, {'x': 465, 'y': 63}, {'x': 465, 'y': 303}, {'x': 6, 'y': 303}]",negative
+Malad & Fort Area","[{'x': 7, 'y': 63}, {'x': 465, 'y': 63}, {'x': 465, 'y': 303}, {'x': 7, 'y': 303}]",negative
 negative_257.jpg,/kaggle/input/musait/basket/negative_257.jpg,1,"NDTV
 Two Buildings Collapse In
 Malad & Fort Area","[{'x': 6, 'y': 63}, {'x': 465, 'y': 63}, {'x': 465, 'y': 303}, {'x': 6, 'y': 303}]",negative
@@ -5738,8 +5739,9 @@ BETTER WITH
 PSAUCE
 WAR DECLARED BY
 BRITAIN AND FRANCE
-The Fleet Moves Lathable POLES SMASH WAY
+The Fleet Moves
 Into Position
+Lathable POLES SMASH WAY
 We d INTO E. PRUSSIA
 Belave The o
 GERMANY AT 11 O'CLOCK YESTERDAY Chall
@@ -5862,7 +5864,7 @@ STOP
 Ratin PUTIN
 For VUROPE
 STOP PUTIN
-STOP WAR","[{'x': 143, 'y': 113}, {'x': 965, 'y': 113}, {'x': 965, 'y': 623}, {'x': 143, 'y': 623}]",negative
+STOP WAR","[{'x': 143, 'y': 113}, {'x': 965, 'y': 113}, {'x': 965, 'y': 622}, {'x': 143, 'y': 622}]",negative
 negative_486.jpg,/kaggle/input/musait/basket/negative_486.jpg,1,"STOP
 PUTIN
 WAR","[{'x': 266, 'y': 169}, {'x': 502, 'y': 169}, {'x': 502, 'y': 357}, {'x': 266, 'y': 357}]",negative
@@ -6076,7 +6078,7 @@ Remembering the victims of
 On this day, I pay tributes and
 homage to the Martyrs and survivors
 of India's bloodiest terrorist attack in Mumbai.
-Their sacrifices will never be forgotten.","[{'x': 16, 'y': 12}, {'x': 214, 'y': 12}, {'x': 214, 'y': 209}, {'x': 16, 'y': 209}]",negative
+Their sacrifices will never be forgotten.","[{'x': 16, 'y': 12}, {'x': 214, 'y': 12}, {'x': 214, 'y': 208}, {'x': 16, 'y': 208}]",negative
 negative_527.jpeg,/kaggle/input/musait/basket/negative_527.jpeg,1,"Irant
 Remembering the victims of
 26/11
@@ -6467,7 +6469,7 @@ ngapore States Times","[{'x': 8, 'y': 5}, {'x': 285, 'y': 5}, {'x': 285, 'y': 16
 negative_598.jpeg,/kaggle/input/musait/basket/negative_598.jpeg,1,"I NEED ALL STOLEN,
 FUNNY & OFFENSIVE MEMES
 O
-POSTED RIGHT HERE...","[{'x': 0, 'y': 3}, {'x': 224, 'y': 3}, {'x': 224, 'y': 204}, {'x': 0, 'y': 204}]",negative
+POSTED RIGHT HERE...","[{'x': 0, 'y': 3}, {'x': 224, 'y': 3}, {'x': 224, 'y': 203}, {'x': 0, 'y': 203}]",negative
 negative_599.jpeg,/kaggle/input/musait/basket/negative_599.jpeg,1,"OH MY DAD
 I'M SO OFFENDED
 memegenerator.ns","[{'x': 29, 'y': 8}, {'x': 222, 'y': 8}, {'x': 222, 'y': 223}, {'x': 29, 'y': 223}]",negative
@@ -7000,7 +7002,7 @@ NEWS","[{'x': 18, 'y': 49}, {'x': 666, 'y': 49}, {'x': 666, 'y': 704}, {'x': 18,
 negative_675.jpg,/kaggle/input/musait/basket/negative_675.jpg,1,"OVER 4,000
 KILLED IN TURKEY
 NEWS 18
-OLIVE","[{'x': 0, 'y': 3}, {'x': 313, 'y': 3}, {'x': 313, 'y': 171}, {'x': 0, 'y': 171}]",negative
+OLIVE","[{'x': 0, 'y': 3}, {'x': 313, 'y': 3}, {'x': 313, 'y': 172}, {'x': 0, 'y': 172}]",negative
 negative_676.jpg,/kaggle/input/musait/basket/negative_676.jpg,1,"HELPLESS
 TURKEY,
 SYRIA
@@ -7072,7 +7074,7 @@ knowledge that
 only your thoughts
 can affect your
 moods.
--DAVID D. BURNS","[{'x': 752, 'y': 89}, {'x': 1531, 'y': 89}, {'x': 1531, 'y': 813}, {'x': 752, 'y': 813}]",negative
+-DAVID D. BURNS","[{'x': 752, 'y': 89}, {'x': 1531, 'y': 89}, {'x': 1531, 'y': 814}, {'x': 752, 'y': 814}]",negative
 negative_689.jpg,/kaggle/input/musait/basket/negative_689.jpg,1,"My silence meaning that my
 mood is off
 quotesove.com","[{'x': 152, 'y': 341}, {'x': 1267, 'y': 341}, {'x': 1267, 'y': 718}, {'x': 152, 'y': 718}]",negative
@@ -7151,7 +7153,7 @@ PROBE DEEPENS IN
 SHAHABAD MURDER","[{'x': 4, 'y': 54}, {'x': 1234, 'y': 54}, {'x': 1234, 'y': 692}, {'x': 4, 'y': 692}]",negative
 negative_706.jpg,/kaggle/input/musait/basket/negative_706.jpg,1,"BJP LEADER'S SON ARRESTED FOR
 MURDER, RESORT DEMOLISHED
-Oneindia English","[{'x': 6, 'y': 19}, {'x': 1248, 'y': 19}, {'x': 1248, 'y': 692}, {'x': 6, 'y': 692}]",negative
+Oneindia English","[{'x': 6, 'y': 19}, {'x': 1249, 'y': 19}, {'x': 1249, 'y': 692}, {'x': 6, 'y': 692}]",negative
 negative_707.jpg,/kaggle/input/musait/basket/negative_707.jpg,1,"NEWS 18
 POLICE RECOVERS MORE
 HAN 13 BODY PARTS","[{'x': 0, 'y': 11}, {'x': 289, 'y': 11}, {'x': 289, 'y': 162}, {'x': 0, 'y': 162}]",negative
@@ -7733,7 +7735,7 @@ THE BIG
 BOOM CRASH","[{'x': 326, 'y': 56}, {'x': 1240, 'y': 56}, {'x': 1240, 'y': 466}, {'x': 326, 'y': 466}]",negative
 negative_817.jpg,/kaggle/input/musait/basket/negative_817.jpg,1,"Uri Rape Horror
 INDIA
-TODAY","[{'x': 53, 'y': 59}, {'x': 1226, 'y': 59}, {'x': 1226, 'y': 617}, {'x': 53, 'y': 617}]",negative
+TODAY","[{'x': 53, 'y': 59}, {'x': 1226, 'y': 59}, {'x': 1226, 'y': 616}, {'x': 53, 'y': 616}]",negative
 negative_818.jpg,/kaggle/input/musait/basket/negative_818.jpg,1,"Migrant boat disaster
 BBC NEWS","[{'x': 61, 'y': 472}, {'x': 1103, 'y': 472}, {'x': 1103, 'y': 673}, {'x': 61, 'y': 673}]",negative
 negative_819.jpg,/kaggle/input/musait/basket/negative_819.jpg,1,"298 Pakistanis
@@ -9206,7 +9208,7 @@ Help
 me
 i am
 huawei
-user","[{'x': 18, 'y': 128}, {'x': 455, 'y': 128}, {'x': 455, 'y': 667}, {'x': 18, 'y': 667}]",neutral
+user","[{'x': 18, 'y': 128}, {'x': 454, 'y': 128}, {'x': 454, 'y': 667}, {'x': 18, 'y': 667}]",neutral
 neutral_199.jpg,/kaggle/input/musait/basket/neutral_199.jpg,1,"FUNKAARIYAN
 Help
 me
@@ -9696,7 +9698,7 @@ Finance - 0%
 FP Final Project
 Final Project - 0%
 BACK TO ALL COURSES
-III","[{'x': 50, 'y': 25}, {'x': 648, 'y': 25}, {'x': 648, 'y': 1570}, {'x': 50, 'y': 1570}]",neutral
+III","[{'x': 50, 'y': 25}, {'x': 648, 'y': 25}, {'x': 648, 'y': 1571}, {'x': 50, 'y': 1571}]",neutral
 neutral_281.jpeg,/kaggle/input/musait/basket/neutral_281.jpeg,1,"Class
 So you let all my friends to
 have access to my privates?
@@ -9756,7 +9758,7 @@ else:
 print(str(f1) + ""is greatest "")
 print(str(f2) + ""is greatest "")
 < > → 54
->=","[{'x': 7, 'y': 12}, {'x': 705, 'y': 12}, {'x': 705, 'y': 1261}, {'x': 7, 'y': 1261}]",neutral
+>=","[{'x': 7, 'y': 12}, {'x': 705, 'y': 12}, {'x': 705, 'y': 1260}, {'x': 7, 'y': 1260}]",neutral
 neutral_284.jpg,/kaggle/input/musait/basket/neutral_284.jpg,1,"←
 QEdit - pip_conso...
 ان
@@ -9802,7 +9804,7 @@ else:
 print(str(f1) + ""is greatest "")
 print(str(f2) + ""is greatest "")
 < > → 54
->=","[{'x': 7, 'y': 12}, {'x': 705, 'y': 12}, {'x': 705, 'y': 1261}, {'x': 7, 'y': 1261}]",neutral
+>=","[{'x': 7, 'y': 12}, {'x': 705, 'y': 12}, {'x': 705, 'y': 1260}, {'x': 7, 'y': 1260}]",neutral
 neutral_285.jpeg,/kaggle/input/musait/basket/neutral_285.jpeg,1,"Alcohol and Calculus don't mix
 Don't Drink and Derive","[{'x': 193, 'y': 236}, {'x': 573, 'y': 236}, {'x': 573, 'y': 369}, {'x': 193, 'y': 369}]",neutral
 neutral_286.jpeg,/kaggle/input/musait/basket/neutral_286.jpeg,1,"Alcohol and Calculus don't mix
@@ -9812,7 +9814,7 @@ computer and mobile until
 your exams are over.
 Me studying software
 engineering:
--sal..","[{'x': 14, 'y': 0}, {'x': 688, 'y': 0}, {'x': 688, 'y': 839}, {'x': 14, 'y': 839}]",neutral
+-sal..","[{'x': 14, 'y': 0}, {'x': 689, 'y': 0}, {'x': 689, 'y': 839}, {'x': 14, 'y': 839}]",neutral
 neutral_288.jpg,/kaggle/input/musait/basket/neutral_288.jpg,1,"Mom: Don't touch your
 computer and mobile until
 your exams are over.
@@ -10819,7 +10821,7 @@ neutral_455.jpeg,/kaggle/input/musait/basket/neutral_455.jpeg,1,"Day 1
 Day 4
 Day 5
 when I was a kid :
-lam a scientist","[{'x': 34, 'y': 5}, {'x': 364, 'y': 5}, {'x': 364, 'y': 575}, {'x': 34, 'y': 575}]",neutral
+lam a scientist","[{'x': 35, 'y': 5}, {'x': 364, 'y': 5}, {'x': 364, 'y': 575}, {'x': 35, 'y': 575}]",neutral
 neutral_456.jpeg,/kaggle/input/musait/basket/neutral_456.jpeg,1,"Day 1
 Day 4
 Day 5
@@ -11753,9 +11755,9 @@ write dating apps
 I guide others to a treasure that I cannot possess","[{'x': 1, 'y': 17}, {'x': 690, 'y': 17}, {'x': 690, 'y': 708}, {'x': 1, 'y': 708}]",neutral
 neutral_554.jpg,/kaggle/input/musait/basket/neutral_554.jpg,0,,[],neutral
 neutral_555.jpeg,/kaggle/input/musait/basket/neutral_555.jpeg,1,"I see the problem. Your
-guitar is out of tuna.","[{'x': 48, 'y': 32}, {'x': 675, 'y': 32}, {'x': 675, 'y': 146}, {'x': 48, 'y': 146}]",neutral
+guitar is out of tuna.","[{'x': 48, 'y': 31}, {'x': 675, 'y': 31}, {'x': 675, 'y': 146}, {'x': 48, 'y': 146}]",neutral
 neutral_556.jpeg,/kaggle/input/musait/basket/neutral_556.jpeg,1,"I see the problem. Your
-guitar is out of tuna.","[{'x': 48, 'y': 32}, {'x': 675, 'y': 32}, {'x': 675, 'y': 146}, {'x': 48, 'y': 146}]",neutral
+guitar is out of tuna.","[{'x': 48, 'y': 31}, {'x': 675, 'y': 31}, {'x': 675, 'y': 146}, {'x': 48, 'y': 146}]",neutral
 neutral_557.jpg,/kaggle/input/musait/basket/neutral_557.jpg,1,"FACEBOOK AND
 INSTAGRAM GO DOWN
 DIDN'T EVEN
@@ -12418,7 +12420,7 @@ My wife and son!
 Like Comment Share","[{'x': 17, 'y': 10}, {'x': 178, 'y': 10}, {'x': 178, 'y': 227}, {'x': 17, 'y': 227}]",neutral
 neutral_649.jpeg,/kaggle/input/musait/basket/neutral_649.jpeg,1,"How to Write an Academic Blog Post
 Proofed.
-U","[{'x': 16, 'y': 18}, {'x': 281, 'y': 18}, {'x': 281, 'y': 146}, {'x': 16, 'y': 146}]",neutral
+U","[{'x': 16, 'y': 18}, {'x': 282, 'y': 18}, {'x': 282, 'y': 146}, {'x': 16, 'y': 146}]",neutral
 neutral_650.jpeg,/kaggle/input/musait/basket/neutral_650.jpeg,1,"How to Write an Academic Blog Post
 Proofed.
 U","[{'x': 16, 'y': 18}, {'x': 281, 'y': 18}, {'x': 281, 'y': 146}, {'x': 16, 'y': 146}]",neutral
@@ -13324,7 +13326,7 @@ BUSINESS 2-0
 TEDED","[{'x': 478, 'y': 74}, {'x': 1247, 'y': 74}, {'x': 1247, 'y': 482}, {'x': 478, 'y': 482}]",neutral
 neutral_754.jpg,/kaggle/input/musait/basket/neutral_754.jpg,1,"wwwwwwwww
 TEDED
-CAN YOU SOLVE THE HAT RIDDLE?","[{'x': 136, 'y': 22}, {'x': 1246, 'y': 22}, {'x': 1246, 'y': 515}, {'x': 136, 'y': 515}]",neutral
+CAN YOU SOLVE THE HAT RIDDLE?","[{'x': 137, 'y': 22}, {'x': 1246, 'y': 22}, {'x': 1246, 'y': 515}, {'x': 137, 'y': 515}]",neutral
 neutral_755.jpg,/kaggle/input/musait/basket/neutral_755.jpg,1,"H
 THE
 H
@@ -13356,7 +13358,7 @@ HOW BLOOD PRESSURE WORKS","[{'x': 35, 'y': 73}, {'x': 1246, 'y': 73}, {'x': 1246
 neutral_761.jpg,/kaggle/input/musait/basket/neutral_761.jpg,1,"How
 ANESTHESIA
 TEDED
-WORKS","[{'x': 28, 'y': 16}, {'x': 1247, 'y': 16}, {'x': 1247, 'y': 404}, {'x': 28, 'y': 404}]",neutral
+WORKS","[{'x': 28, 'y': 17}, {'x': 1247, 'y': 17}, {'x': 1247, 'y': 404}, {'x': 28, 'y': 404}]",neutral
 neutral_762.jpg,/kaggle/input/musait/basket/neutral_762.jpg,1,C PERPETUAL-,"[{'x': 153, 'y': 13}, {'x': 240, 'y': 13}, {'x': 240, 'y': 49}, {'x': 153, 'y': 49}]",neutral
 neutral_763.jpg,/kaggle/input/musait/basket/neutral_763.jpg,1,"A BRIE(F) HISTORY OF
 CHEESE
@@ -13642,7 +13644,7 @@ neutral_796.jpg,/kaggle/input/musait/basket/neutral_796.jpg,1,"Gunter Peterson
 Sr. C++ Engineer @ Systemic Systems","[{'x': 75, 'y': 302}, {'x': 346, 'y': 302}, {'x': 346, 'y': 356}, {'x': 75, 'y': 356}]",neutral
 neutral_797.jpg,/kaggle/input/musait/basket/neutral_797.jpg,1,"LEARN
 PYTHON
-IN 1 HOUR","[{'x': 283, 'y': 28}, {'x': 705, 'y': 28}, {'x': 705, 'y': 255}, {'x': 283, 'y': 255}]",neutral
+IN 1 HOUR","[{'x': 283, 'y': 28}, {'x': 706, 'y': 28}, {'x': 706, 'y': 255}, {'x': 283, 'y': 255}]",neutral
 neutral_798.jpg,/kaggle/input/musait/basket/neutral_798.jpg,1,"SHOULD YOU
 LEARN
 |=GO?","[{'x': 19, 'y': 59}, {'x': 357, 'y': 59}, {'x': 357, 'y': 337}, {'x': 19, 'y': 337}]",neutral
@@ -13762,7 +13764,7 @@ neutral_820.jpg,/kaggle/input/musait/basket/neutral_820.jpg,1,"ALIENS
 IN THE
 OCEAN
 H
-HISTORY.","[{'x': 22, 'y': 32}, {'x': 289, 'y': 32}, {'x': 289, 'y': 381}, {'x': 22, 'y': 381}]",neutral
+HISTORY.","[{'x': 22, 'y': 32}, {'x': 288, 'y': 32}, {'x': 288, 'y': 381}, {'x': 22, 'y': 381}]",neutral
 neutral_821.jpg,/kaggle/input/musait/basket/neutral_821.jpg,1,"IRANIAN
 DNA
 HISTORY
@@ -13823,7 +13825,7 @@ TEDED","[{'x': 61, 'y': 71}, {'x': 1247, 'y': 71}, {'x': 1247, 'y': 568}, {'x': 
 neutral_835.jpg,/kaggle/input/musait/basket/neutral_835.jpg,1,"TEDED
 E=mc2
 CAN YOU SOLVE
-EINSTEIN'S RIDDLE?","[{'x': 110, 'y': 73}, {'x': 1247, 'y': 73}, {'x': 1247, 'y': 686}, {'x': 110, 'y': 686}]",neutral
+EINSTEIN'S RIDDLE?","[{'x': 111, 'y': 73}, {'x': 1247, 'y': 73}, {'x': 1247, 'y': 686}, {'x': 111, 'y': 686}]",neutral
 neutral_836.jpg,/kaggle/input/musait/basket/neutral_836.jpg,1,"CAN YOU SOLVE
 THE THREE GODS RIDDLE?
 TEDED
@@ -13963,7 +13965,7 @@ neutral_868.jpg,/kaggle/input/musait/basket/neutral_868.jpg,1,"CAN YOU
 SOLVE THE
 о
 RIVER CROSSING RIDDLE?
-TEDED","[{'x': 38, 'y': 74}, {'x': 1247, 'y': 74}, {'x': 1247, 'y': 671}, {'x': 38, 'y': 671}]",neutral
+TEDED","[{'x': 39, 'y': 74}, {'x': 1247, 'y': 74}, {'x': 1247, 'y': 671}, {'x': 39, 'y': 671}]",neutral
 neutral_869.jpg,/kaggle/input/musait/basket/neutral_869.jpg,1,"WHY DO WE
 TEDED
 ITCH?","[{'x': 554, 'y': 72}, {'x': 1248, 'y': 72}, {'x': 1248, 'y': 616}, {'x': 554, 'y': 616}]",neutral
@@ -14058,7 +14060,7 @@ IMMORTAL HUMAN CELLS","[{'x': 31, 'y': 72}, {'x': 1246, 'y': 72}, {'x': 1246, 'y
 neutral_889.jpg,/kaggle/input/musait/basket/neutral_889.jpg,1,"WHY DO
 JOINTS
 POP?
-TEDED","[{'x': 66, 'y': 73}, {'x': 1246, 'y': 73}, {'x': 1246, 'y': 642}, {'x': 66, 'y': 642}]",neutral
+TEDED","[{'x': 66, 'y': 73}, {'x': 1247, 'y': 73}, {'x': 1247, 'y': 642}, {'x': 66, 'y': 642}]",neutral
 neutral_890.jpg,/kaggle/input/musait/basket/neutral_890.jpg,1,"TEDED
 Squad
 00
@@ -14070,7 +14072,7 @@ LIFESPANS?","[{'x': 137, 'y': 73}, {'x': 1247, 'y': 73}, {'x': 1247, 'y': 513}, 
 neutral_891.jpg,/kaggle/input/musait/basket/neutral_891.jpg,1,"ACCURACY
 VS
 PRECISION
-TEDED","[{'x': 307, 'y': 40}, {'x': 1246, 'y': 40}, {'x': 1246, 'y': 536}, {'x': 307, 'y': 536}]",neutral
+TEDED","[{'x': 307, 'y': 39}, {'x': 1246, 'y': 39}, {'x': 1246, 'y': 536}, {'x': 307, 'y': 536}]",neutral
 neutral_892.jpg,/kaggle/input/musait/basket/neutral_892.jpg,1,"WHAT CAUSES
 INSOMNIA?
 TEDED
@@ -14101,7 +14103,7 @@ m
 TEDED","[{'x': 49, 'y': 74}, {'x': 1248, 'y': 74}, {'x': 1248, 'y': 557}, {'x': 49, 'y': 557}]",neutral
 neutral_899.jpg,/kaggle/input/musait/basket/neutral_899.jpg,1,"TEDED
 WHAT IS
-DEJA VU?","[{'x': 343, 'y': 73}, {'x': 1246, 'y': 73}, {'x': 1246, 'y': 523}, {'x': 343, 'y': 523}]",neutral
+DEJA VU?","[{'x': 343, 'y': 73}, {'x': 1246, 'y': 73}, {'x': 1246, 'y': 524}, {'x': 343, 'y': 524}]",neutral
 neutral_900.jpg,/kaggle/input/musait/basket/neutral_900.jpg,1,"BREAKING
 THE
 SOUND
@@ -14396,7 +14398,7 @@ neutral_941.png,/kaggle/input/musait/basket/neutral_941.png,1,Facebook photo pos
 neutral_942.jpg,/kaggle/input/musait/basket/neutral_942.jpg,1,"Facebook Link Post Image
 1200 X 628
 Template courtesy of
-Dustn.tv","[{'x': 91, 'y': 87}, {'x': 1112, 'y': 87}, {'x': 1112, 'y': 539}, {'x': 91, 'y': 539}]",neutral
+Dustn.tv","[{'x': 90, 'y': 87}, {'x': 1112, 'y': 87}, {'x': 1112, 'y': 539}, {'x': 90, 'y': 539}]",neutral
 neutral_943.jpeg,/kaggle/input/musait/basket/neutral_943.jpeg,1,NORMAL,"[{'x': 13, 'y': 86}, {'x': 213, 'y': 86}, {'x': 213, 'y': 122}, {'x': 13, 'y': 122}]",neutral
 neutral_944.png,/kaggle/input/musait/basket/neutral_944.png,1,"NN
 New Normal","[{'x': 50, 'y': 73}, {'x': 167, 'y': 73}, {'x': 167, 'y': 172}, {'x': 50, 'y': 172}]",neutral
@@ -14747,7 +14749,7 @@ positive_084.jpg,/kaggle/input/musait/basket/positive_084.jpg,1,"""Insanity is d
 same thing over and
 over again and expecting
 different results""
-Albert Einstein","[{'x': 92, 'y': 161}, {'x': 636, 'y': 161}, {'x': 636, 'y': 416}, {'x': 92, 'y': 416}]",positive
+Albert Einstein","[{'x': 91, 'y': 161}, {'x': 636, 'y': 161}, {'x': 636, 'y': 416}, {'x': 91, 'y': 416}]",positive
 positive_085.jpg,/kaggle/input/musait/basket/positive_085.jpg,0,,[],positive
 positive_086.jpeg,/kaggle/input/musait/basket/positive_086.jpeg,1,"Sometimes you have to
 blame yourself because
@@ -15110,7 +15112,7 @@ positive_130.jpeg,/kaggle/input/musait/basket/positive_130.jpeg,1,"Conceive. Bel
 If your mind can conceive and
 your heart believes it then you
 can achieve it.
-- Via (Dark Secrets)","[{'x': 107, 'y': 274}, {'x': 667, 'y': 274}, {'x': 667, 'y': 665}, {'x': 107, 'y': 665}]",positive
+- Via (Dark Secrets)","[{'x': 107, 'y': 273}, {'x': 667, 'y': 273}, {'x': 667, 'y': 665}, {'x': 107, 'y': 665}]",positive
 positive_131.jpeg,/kaggle/input/musait/basket/positive_131.jpeg,1,"Conceive. Believe. Achieve.
 If your mind can conceive and
 your heart believes it then you
@@ -16031,11 +16033,10 @@ positive_339.jpeg,/kaggle/input/musait/basket/positive_339.jpeg,1,"""May the fes
 brings the brightness of colors
 to your life
 Happy Holi","[{'x': 0, 'y': 8}, {'x': 108, 'y': 8}, {'x': 108, 'y': 83}, {'x': 0, 'y': 83}]",positive
-positive_340.jpeg,/kaggle/input/musait/basket/positive_340.jpeg,1,"16;
-""May the festival of colours
+positive_340.jpeg,/kaggle/input/musait/basket/positive_340.jpeg,1,"""May the festival of colours
 brings the brightness of colors
 to your life
-Happy Holi","[{'x': 0, 'y': 8}, {'x': 204, 'y': 8}, {'x': 204, 'y': 189}, {'x': 0, 'y': 189}]",positive
+Happy Holi","[{'x': 0, 'y': 8}, {'x': 108, 'y': 8}, {'x': 108, 'y': 83}, {'x': 0, 'y': 83}]",positive
 positive_341.jpeg,/kaggle/input/musait/basket/positive_341.jpeg,1,"Happy
 Holi","[{'x': 63, 'y': 21}, {'x': 207, 'y': 21}, {'x': 207, 'y': 90}, {'x': 63, 'y': 90}]",positive
 positive_342.jpeg,/kaggle/input/musait/basket/positive_342.jpeg,1,"Happy
@@ -16189,7 +16190,7 @@ positive_370.jpeg,/kaggle/input/musait/basket/positive_370.jpeg,1,"lifemello
 MY GOAL IS NOT TO BE
 BETTER THAN ANYONE ELSE,
 BUT TO BE BETTER THAN
-I USED TO BE.","[{'x': 48, 'y': 348}, {'x': 669, 'y': 348}, {'x': 669, 'y': 591}, {'x': 48, 'y': 591}]",positive
+I USED TO BE.","[{'x': 49, 'y': 348}, {'x': 669, 'y': 348}, {'x': 669, 'y': 591}, {'x': 49, 'y': 591}]",positive
 positive_371.png,/kaggle/input/musait/basket/positive_371.png,1,Happy Valentine's Day,"[{'x': 80, 'y': 86}, {'x': 257, 'y': 86}, {'x': 257, 'y': 134}, {'x': 80, 'y': 134}]",positive
 positive_372.png,/kaggle/input/musait/basket/positive_372.png,1,Happy Valentine's Day,"[{'x': 80, 'y': 86}, {'x': 257, 'y': 86}, {'x': 257, 'y': 134}, {'x': 80, 'y': 134}]",positive
 positive_373.jpeg,/kaggle/input/musait/basket/positive_373.jpeg,1,"Happy Anniversary
@@ -16261,7 +16262,7 @@ NEUR","[{'x': 33, 'y': 22}, {'x': 697, 'y': 22}, {'x': 697, 'y': 484}, {'x': 33,
 positive_390.jpeg,/kaggle/input/musait/basket/positive_390.jpeg,1,"It may be stormy
 now but it can't
 rain forever.
-Via (Dark Secrets)","[{'x': 168, 'y': 438}, {'x': 597, 'y': 438}, {'x': 597, 'y': 683}, {'x': 168, 'y': 683}]",positive
+Via (Dark Secrets)","[{'x': 168, 'y': 438}, {'x': 598, 'y': 438}, {'x': 598, 'y': 683}, {'x': 168, 'y': 683}]",positive
 positive_391.jpeg,/kaggle/input/musait/basket/positive_391.jpeg,1,"It may be stormy
 now but it can't
 rain forever.
@@ -16472,8 +16473,8 @@ They are at work so that you can be safe at home
 Stay Safe, Stay Acufire Protected","[{'x': 33, 'y': 4}, {'x': 237, 'y': 4}, {'x': 237, 'y': 204}, {'x': 33, 'y': 204}]",positive
 positive_430.jpg,/kaggle/input/musait/basket/positive_430.jpg,0,,[],positive
 positive_431.jpeg,/kaggle/input/musait/basket/positive_431.jpeg,1,IL'S ALL ABOUT THE RED & GREEN,"[{'x': 65, 'y': 11}, {'x': 235, 'y': 11}, {'x': 235, 'y': 18}, {'x': 65, 'y': 18}]",positive
-positive_432.jpg,/kaggle/input/musait/basket/positive_432.jpg,1,HAPPY BIRTHDAY,"[{'x': 345, 'y': 338}, {'x': 1037, 'y': 338}, {'x': 1037, 'y': 516}, {'x': 345, 'y': 516}]",positive
-positive_433.jpg,/kaggle/input/musait/basket/positive_433.jpg,1,HAPPY BIRTHDAY,"[{'x': 345, 'y': 338}, {'x': 1037, 'y': 338}, {'x': 1037, 'y': 516}, {'x': 345, 'y': 516}]",positive
+positive_432.jpg,/kaggle/input/musait/basket/positive_432.jpg,1,HAPPY BIRTHDAY,"[{'x': 345, 'y': 339}, {'x': 1037, 'y': 339}, {'x': 1037, 'y': 516}, {'x': 345, 'y': 516}]",positive
+positive_433.jpg,/kaggle/input/musait/basket/positive_433.jpg,1,HAPPY BIRTHDAY,"[{'x': 345, 'y': 339}, {'x': 1037, 'y': 339}, {'x': 1037, 'y': 516}, {'x': 345, 'y': 516}]",positive
 positive_434.jpeg,/kaggle/input/musait/basket/positive_434.jpeg,1,"LIFEMELLO
 BE CAREFUL
 WHO YOU TRUST.
@@ -17129,7 +17130,7 @@ Via (Dark Secrets)","[{'x': 106, 'y': 419}, {'x': 624, 'y': 419}, {'x': 624, 'y'
 positive_561.jpeg,/kaggle/input/musait/basket/positive_561.jpeg,1,"Failure is not the
 opposite of success;
 it's part of success.
-Via (Dark Secrets)","[{'x': 107, 'y': 419}, {'x': 624, 'y': 419}, {'x': 624, 'y': 637}, {'x': 107, 'y': 637}]",positive
+Via (Dark Secrets)","[{'x': 106, 'y': 419}, {'x': 624, 'y': 419}, {'x': 624, 'y': 637}, {'x': 106, 'y': 637}]",positive
 positive_562.jpeg,/kaggle/input/musait/basket/positive_562.jpeg,1,"Stay out, let them
 fix their own karma.
 - Via (Dark Secrets)","[{'x': 144, 'y': 522}, {'x': 618, 'y': 522}, {'x': 618, 'y': 685}, {'x': 144, 'y': 685}]",positive
@@ -17152,12 +17153,12 @@ positive_566.jpeg,/kaggle/input/musait/basket/positive_566.jpeg,1,"ALL GREAT ACH
 REQUIRE TIME
 @successpictures
 NCH
-@successpictures","[{'x': 32, 'y': 30}, {'x': 688, 'y': 30}, {'x': 688, 'y': 607}, {'x': 32, 'y': 607}]",positive
+@successpictures","[{'x': 32, 'y': 30}, {'x': 688, 'y': 30}, {'x': 688, 'y': 608}, {'x': 32, 'y': 608}]",positive
 positive_567.jpeg,/kaggle/input/musait/basket/positive_567.jpeg,1,"ALL GREAT ACHIEVEMENTS
 REQUIRE TIME
 @successpictures
 NCH
-@successpictures","[{'x': 32, 'y': 30}, {'x': 688, 'y': 30}, {'x': 688, 'y': 607}, {'x': 32, 'y': 607}]",positive
+@successpictures","[{'x': 32, 'y': 30}, {'x': 688, 'y': 30}, {'x': 688, 'y': 608}, {'x': 32, 'y': 608}]",positive
 positive_568.jpeg,/kaggle/input/musait/basket/positive_568.jpeg,1,"let them be them, let us be us.","[{'x': 160, 'y': 304}, {'x': 602, 'y': 304}, {'x': 602, 'y': 338}, {'x': 160, 'y': 338}]",positive
 positive_569.jpeg,/kaggle/input/musait/basket/positive_569.jpeg,1,"Stay out, let them
 fix their own karma.
@@ -17875,7 +17876,7 @@ positive_682.jpg,/kaggle/input/musait/basket/positive_682.jpg,1,"Start each day
 with a positive
 thought and a
 grateful heart.
-Roy T. Bennett","[{'x': 120, 'y': 267}, {'x': 438, 'y': 267}, {'x': 438, 'y': 658}, {'x': 120, 'y': 658}]",positive
+Roy T. Bennett","[{'x': 120, 'y': 267}, {'x': 439, 'y': 267}, {'x': 439, 'y': 658}, {'x': 120, 'y': 658}]",positive
 positive_683.jpg,/kaggle/input/musait/basket/positive_683.jpg,1,"""Be a Good Person
 But
 Don't Try to Prove it""","[{'x': 61, 'y': 75}, {'x': 262, 'y': 75}, {'x': 262, 'y': 139}, {'x': 61, 'y': 139}]",positive
@@ -18000,7 +18001,7 @@ but if you work right,
 Once is enough.","[{'x': 17, 'y': 14}, {'x': 651, 'y': 14}, {'x': 651, 'y': 115}, {'x': 17, 'y': 115}]",positive
 positive_710.jpg,/kaggle/input/musait/basket/positive_710.jpg,1,"HAPPY
 Mother's
-DAY","[{'x': 33, 'y': 93}, {'x': 140, 'y': 93}, {'x': 140, 'y': 133}, {'x': 33, 'y': 133}]",positive
+DAY","[{'x': 34, 'y': 93}, {'x': 140, 'y': 93}, {'x': 140, 'y': 133}, {'x': 34, 'y': 133}]",positive
 positive_711.jpg,/kaggle/input/musait/basket/positive_711.jpg,1,"JnanaKadali
 www.jnanakadali.com
 BE HAPPY
@@ -18108,7 +18109,7 @@ with
 positive comme
 energy
 and happy
-thoughts.","[{'x': 26, 'y': 34}, {'x': 549, 'y': 34}, {'x': 549, 'y': 463}, {'x': 26, 'y': 463}]",positive
+thoughts.","[{'x': 26, 'y': 33}, {'x': 549, 'y': 33}, {'x': 549, 'y': 463}, {'x': 26, 'y': 463}]",positive
 positive_733.jpg,/kaggle/input/musait/basket/positive_733.jpg,1,"""Being Happy
 Never Goes
 Out of Style""
@@ -18403,7 +18404,7 @@ positive_780.jpg,/kaggle/input/musait/basket/positive_780.jpg,1,"66
 ""It's failure that gives you
 the proper perspective on
 success.""
-Ellen DeGeneres","[{'x': 78, 'y': 105}, {'x': 598, 'y': 105}, {'x': 598, 'y': 463}, {'x': 78, 'y': 463}]",positive
+Ellen DeGeneres","[{'x': 78, 'y': 104}, {'x': 598, 'y': 104}, {'x': 598, 'y': 463}, {'x': 78, 'y': 463}]",positive
 positive_781.jpg,/kaggle/input/musait/basket/positive_781.jpg,1,"DARE TO LIVE
 the life
 YOU'VE ALWAYS
@@ -18539,13 +18540,13 @@ the smiling heart. ǝa
 -
 - Santosh Kalwar
 aa
-'www.theenglishquotes.com","[{'x': 49, 'y': 15}, {'x': 986, 'y': 15}, {'x': 986, 'y': 989}, {'x': 49, 'y': 989}]",positive
+'www.theenglishquotes.com","[{'x': 49, 'y': 15}, {'x': 987, 'y': 15}, {'x': 987, 'y': 989}, {'x': 49, 'y': 989}]",positive
 positive_807.jpg,/kaggle/input/musait/basket/positive_807.jpg,1,"A smile is a friend
 maker.
 Bangambiki Habyarimana
 EVERYDAY POWER","[{'x': 76, 'y': 169}, {'x': 374, 'y': 169}, {'x': 374, 'y': 422}, {'x': 76, 'y': 422}]",positive
 positive_808.jpg,/kaggle/input/musait/basket/positive_808.jpg,1,"A perfect day is
-when the soul smile.","[{'x': 324, 'y': 838}, {'x': 919, 'y': 838}, {'x': 919, 'y': 983}, {'x': 324, 'y': 983}]",positive
+when the soul smile.","[{'x': 325, 'y': 838}, {'x': 919, 'y': 838}, {'x': 919, 'y': 983}, {'x': 325, 'y': 983}]",positive
 positive_809.jpg,/kaggle/input/musait/basket/positive_809.jpg,1,"""Have you bring
 smile on someone's
 face today? Do it
@@ -19107,7 +19108,7 @@ positive_920.jpg,/kaggle/input/musait/basket/positive_920.jpg,1,"८८
 THE BEST WAY TO CHEER
 YOURSELF IS TO TRY TO
 CHEER SOMEONE ELSE UP.
-Mark Twain","[{'x': 53, 'y': 199}, {'x': 424, 'y': 199}, {'x': 424, 'y': 360}, {'x': 53, 'y': 360}]",positive
+Mark Twain","[{'x': 53, 'y': 199}, {'x': 423, 'y': 199}, {'x': 423, 'y': 360}, {'x': 53, 'y': 360}]",positive
 positive_921.jpg,/kaggle/input/musait/basket/positive_921.jpg,1,"The best thing in the world
 is seeing your baby smile
 @proudhappymama
@@ -19340,7 +19341,7 @@ IS A MOOD.
 POSITIVITY
 IS A MINDSET.
 @POSITIVELY PRESENT
-*","[{'x': 32, 'y': 147}, {'x': 621, 'y': 147}, {'x': 621, 'y': 543}, {'x': 32, 'y': 543}]",positive
+*","[{'x': 32, 'y': 147}, {'x': 622, 'y': 147}, {'x': 622, 'y': 543}, {'x': 32, 'y': 543}]",positive
 positive_966.jpg,/kaggle/input/musait/basket/positive_966.jpg,1,BE HAPPY,"[{'x': 105, 'y': 322}, {'x': 424, 'y': 322}, {'x': 424, 'y': 423}, {'x': 105, 'y': 423}]",positive
 positive_967.jpg,/kaggle/input/musait/basket/positive_967.jpg,1,"Life goes by too quickly.
 So laugh, love and try new things.
@@ -19533,7 +19534,7 @@ HARD. IF IT WERE EASY,
 EVERYBODY WOULD DO
 IT. HARD IS WHAT
 MAKES IT GREAT.
-DAILYFUNNYQUOTE.COM","[{'x': 78, 'y': 296}, {'x': 661, 'y': 296}, {'x': 661, 'y': 1051}, {'x': 78, 'y': 1051}]",positive
+DAILYFUNNYQUOTE.COM","[{'x': 78, 'y': 296}, {'x': 660, 'y': 296}, {'x': 660, 'y': 1051}, {'x': 78, 'y': 1051}]",positive
 positive_999.jpg,/kaggle/input/musait/basket/positive_999.jpg,1,"IT IS A LONG ROAD,
 IT SEEMS IMPOSSIBLE
 BUT IT WILL BE
