@@ -1,0 +1,53 @@
+{
+    "model_name": "Xception",
+    "confusion_matrix": [
+        [
+            71,
+            12,
+            14
+        ],
+        [
+            11,
+            58,
+            18
+        ],
+        [
+            3,
+            16,
+            85
+        ]
+    ],
+    "classification_report": {
+        "negative": {
+            "precision": 0.8352941176470589,
+            "recall": 0.7319587628865979,
+            "f1-score": 0.7802197802197801,
+            "support": 97
+        },
+        "neutral": {
+            "precision": 0.6744186046511628,
+            "recall": 0.6666666666666666,
+            "f1-score": 0.6705202312138728,
+            "support": 87
+        },
+        "positive": {
+            "precision": 0.7264957264957265,
+            "recall": 0.8173076923076923,
+            "f1-score": 0.7692307692307692,
+            "support": 104
+        },
+        "accuracy": 0.7430555555555556,
+        "macro avg": {
+            "precision": 0.7454028162646494,
+            "recall": 0.7386443739536522,
+            "f1-score": 0.739990260221474,
+            "support": 288
+        },
+        "weighted avg": {
+            "precision": 0.7474079985137896,
+            "recall": 0.7430555555555556,
+            "f1-score": 0.7431131208226583,
+            "support": 288
+        }
+    }
+}

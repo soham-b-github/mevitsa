@@ -1,0 +1,54 @@
+{
+    "accuracy": 0.8981818181818182,
+    "confusion_matrix_instructions": "Row_i represents actual_class_i \n Column_j represents predicted_class_j",
+    "confusion_matrix": [
+        [
+            66,
+            12,
+            8
+        ],
+        [
+            1,
+            87,
+            2
+        ],
+        [
+            0,
+            5,
+            94
+        ]
+    ],
+    "classification_report": {
+        "0": {
+            "precision": 0.9850746268656716,
+            "recall": 0.7674418604651163,
+            "f1-score": 0.8627450980392157,
+            "support": 86.0
+        },
+        "1": {
+            "precision": 0.8365384615384616,
+            "recall": 0.9666666666666667,
+            "f1-score": 0.8969072164948454,
+            "support": 90.0
+        },
+        "2": {
+            "precision": 0.9038461538461539,
+            "recall": 0.9494949494949495,
+            "f1-score": 0.9261083743842364,
+            "support": 99.0
+        },
+        "accuracy": 0.8981818181818182,
+        "macro avg": {
+            "precision": 0.9084864140834289,
+            "recall": 0.8945344922089108,
+            "f1-score": 0.8952535629727659,
+            "support": 275.0
+        },
+        "weighted avg": {
+            "precision": 0.9072205406533765,
+            "recall": 0.8981818181818182,
+            "f1-score": 0.8967362071998111,
+            "support": 275.0
+        }
+    }
+}
