@@ -1,0 +1,28 @@
+============================================================================
+    Model Name: t5-base + vit_large_patch16_224
+    ============================================================================
+    Confusion Matrix:
+    
+              Pred 0  Pred 1  Pred 2
+    Actual 0     603      21      22
+    Actual 1      21     620      15
+    Actual 2      13      30     709
+    
+    Support		: 2054
+    Macro precision	: [0.94034033]
+    Macro recall	: [0.94045921]
+    Macro F1	: 0.9403394851400503
+    Accuracy	: 0.9406037000973709
+    
+    Classification Report
+                  precision    recall  f1-score   support
+
+           0     0.9466    0.9334    0.9400       646
+           1     0.9240    0.9451    0.9344       656
+           2     0.9504    0.9428    0.9466       752
+
+    accuracy                         0.9406      2054
+   macro avg     0.9403    0.9405    0.9403      2054
+weighted avg     0.9408    0.9406    0.9406      2054
+
+    

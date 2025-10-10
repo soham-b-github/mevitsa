@@ -1,0 +1,27 @@
+============================================================================
+Model Name: facebook/bart-base + ViT-B/32
+============================================================================
+Confusion Matrix:
+
+          Pred 0  Pred 1  Pred 2
+Actual 0     604      19      23
+Actual 1      32     614      10
+Actual 2      13      39     700
+
+Support		: 2054
+Macro precision	: 0.93311086
+Macro recall	: 0.93393706
+Macro F1	: 0.9334260902533994
+Accuracy	: 0.9337877312560857
+
+Classification
+Report		precision    recall  f1-score   support
+
+           0     0.9307    0.9350    0.9328       646
+           1     0.9137    0.9360    0.9247       656
+           2     0.9550    0.9309    0.9428       752
+
+    accuracy                         0.9338      2054
+   macro avg     0.9331    0.9339    0.9334      2054
+weighted avg     0.9341    0.9338    0.9339      2054
+

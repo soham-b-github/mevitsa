@@ -1,0 +1,28 @@
+============================================================================
+    Model Name: distilroberta-base + vit_large_patch16_224
+    ============================================================================
+    Confusion Matrix:
+    
+              Pred 0  Pred 1  Pred 2
+    Actual 0     590      32      24
+    Actual 1      13     630      13
+    Actual 2      13      34     705
+    
+    Support		: 2054
+    Macro precision	: [0.9376998]
+    Macro recall	: [0.93705952]
+    Macro F1	: 0.9369171783047694
+    Accuracy	: 0.9371957156767283
+    
+    Classification Report
+                  precision    recall  f1-score   support
+
+           0     0.9578    0.9133    0.9350       646
+           1     0.9052    0.9604    0.9320       656
+           2     0.9501    0.9375    0.9438       752
+
+    accuracy                         0.9372      2054
+   macro avg     0.9377    0.9371    0.9369      2054
+weighted avg     0.9382    0.9372    0.9372      2054
+
+    

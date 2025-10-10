@@ -1,0 +1,28 @@
+============================================================================
+    Model Name: t5-base + xception
+    ============================================================================
+    Confusion Matrix:
+    
+              Pred 0  Pred 1  Pred 2
+    Actual 0     579      29      38
+    Actual 1      46     568      42
+    Actual 2      16      38     698
+    
+    Support		: 2054
+    Macro precision	: [0.89831219]
+    Macro recall	: [0.89677666]
+    Macro F1	: 0.8973744109844716
+    Accuracy	: 0.8982473222979552
+    
+    Classification Report
+                  precision    recall  f1-score   support
+
+           0     0.9033    0.8963    0.8998       646
+           1     0.8945    0.8659    0.8799       656
+           2     0.8972    0.9282    0.9124       752
+
+    accuracy                         0.8982      2054
+   macro avg     0.8983    0.8968    0.8974      2054
+weighted avg     0.8982    0.8982    0.8981      2054
+
+    
