@@ -1,0 +1,28 @@
+============================================================================
+    Model Name: MELT
+    ============================================================================
+    Confusion Matrix:
+    
+              Pred 0  Pred 1  Pred 2
+    Actual 0     625      13      8
+    Actual 1      15     638      3
+    Actual 2      7      25     720
+    
+    Support		: 2054
+    Macro precision	: [0.964912]
+    Macro recall	: [0.96583335]
+    Macro F1	: 0.9652355614356513
+    Accuracy	: 0.9654333008763388
+    
+    Classification Report
+                  precision    recall  f1-score   support
+
+           0     0.9660    0.9675    0.9667       646
+           1     0.9438    0.9726    0.9580       656
+           2     0.9850    0.9574    0.9710       752
+
+    accuracy                         0.9654      2054
+   macro avg     0.9649    0.9658    0.9652      2054
+weighted avg     0.9658    0.9654    0.9655      2054
+
+    
