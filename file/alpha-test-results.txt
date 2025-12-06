@@ -1,0 +1,258 @@
+============================================================================
+    Model Name: MeViTSA
+    alpha = 0.1
+    ========================================================================
+    Confusion Matrix:
+    
+              Pred 0  Pred 1  Pred 2
+    Actual 0     567      38      41
+    Actual 1      15     632      9
+    Actual 2      14      37     701
+    
+    Support		: 2054
+    Macro precision	: [0.92622745]
+    Macro recall	: [0.92443482]
+    Macro F1	: 0.924403548993471
+    Accuracy	: 0.9250243427458618
+    
+    Classification Report
+                  precision    recall  f1-score   support
+
+           0     0.9513    0.8777    0.9130       646
+           1     0.8939    0.9634    0.9274       656
+           2     0.9334    0.9322    0.9328       752
+
+    accuracy                         0.9250      2054
+   macro avg     0.9262    0.9244    0.9244      2054
+weighted avg     0.9264    0.9250    0.9249      2054
+
+
+============================================================================
+    Model Name: MeViTSA
+    alpha = 0.2
+    ========================================================================
+    Confusion Matrix:
+    
+              Pred 0  Pred 1  Pred 2
+    Actual 0     577      32      37
+    Actual 1      13     635      8
+    Actual 2      11      34     707
+    
+    Support		: 2054
+    Macro precision	: [0.93535831]
+    Macro recall	: [0.93377874]
+    Macro F1	: 0.9338228577007968
+    Accuracy	: 0.9342745861733204
+    
+    Classification Report
+                  precision    recall  f1-score   support
+
+           0     0.9601    0.8932    0.9254       646
+           1     0.9058    0.9680    0.9359       656
+           2     0.9402    0.9402    0.9402       752
+
+    accuracy                         0.9343      2054
+   macro avg     0.9354    0.9338    0.9338      2054
+weighted avg     0.9355    0.9343    0.9342      2054
+
+============================================================================
+    Model Name: MeViTSA
+    alpha = 0.3
+    ========================================================================
+    Confusion Matrix:
+    
+              Pred 0  Pred 1  Pred 2
+    Actual 0     588      27      31
+    Actual 1      11     639      6
+    Actual 2      10      30     712
+    
+    Support		: 2054
+    Macro precision	: [0.9447405]
+    Macro recall	: [0.94370353]
+    Macro F1	: 0.9436729770357695
+    Accuracy	: 0.9440116845180136
+    
+    Classification Report
+                  precision    recall  f1-score   support
+
+           0     0.9655    0.9102    0.9371       646
+           1     0.9181    0.9741    0.9453       656
+           2     0.9506    0.9468    0.9487       752
+
+    accuracy                         0.9440      2054
+   macro avg     0.9447    0.9437    0.9437      2054
+weighted avg     0.9449    0.9440    0.9439      2054
+
+
+============================================================================
+    Model Name: MeViTSA
+    alpha = 0.4
+    ========================================================================
+    Confusion Matrix:
+    
+              Pred 0  Pred 1  Pred 2
+    Actual 0     608      19      19
+    Actual 1      13     638      5
+    Actual 2      8      25     719
+    
+    Support		: 2054
+    Macro precision	: [0.95659869]
+    Macro recall	: [0.95661816]
+    Macro F1	: 0.9564201940856031
+    Accuracy	: 0.9566699123661149
+    
+    Classification Report
+                  precision    recall  f1-score   support
+
+           0     0.9666    0.9412    0.9537       646
+           1     0.9355    0.9726    0.9537       656
+           2     0.9677    0.9561    0.9619       752
+
+    accuracy                         0.9567      2054
+   macro avg     0.9566    0.9566    0.9564      2054
+weighted avg     0.9571    0.9567    0.9567      2054
+
+============================================================================
+    Model Name: MeViTSA
+    alpha = 0.5
+    ========================================================================
+    Confusion Matrix:
+    
+              Pred 0  Pred 1  Pred 2
+    Actual 0     623      14      9
+    Actual 1      13     639      4
+    Actual 2      8      22     722
+    
+    Support		: 2054
+    Macro precision	: [0.96545697]
+    Macro recall	: [0.96619601]
+    Macro F1	: 0.9657181684333521
+    Accuracy	: 0.9659201557935735
+    
+    Classification Report
+                  precision    recall  f1-score   support
+
+           0     0.9674    0.9644    0.9659       646
+           1     0.9467    0.9741    0.9602       656
+           2     0.9823    0.9601    0.9711       752
+
+    accuracy                         0.9659      2054
+   macro avg     0.9655    0.9662    0.9657      2054
+weighted avg     0.9662    0.9659    0.9660      2054
+
+
+============================================================================
+    Model Name: MeViTSA
+    alpha = 0.6
+    ========================================================================
+    Confusion Matrix:
+    
+              Pred 0  Pred 1  Pred 2
+    Actual 0     625      13      8
+    Actual 1      15     638      3
+    Actual 2      7      25     720
+    
+    Support		: 2054
+    Macro precision	: [0.964912]
+    Macro recall	: [0.96583335]
+    Macro F1	: 0.9652355614356513
+    Accuracy	: 0.9654333008763388
+    
+    Classification Report
+                  precision    recall  f1-score   support
+
+           0     0.9660    0.9675    0.9667       646
+           1     0.9438    0.9726    0.9580       656
+           2     0.9850    0.9574    0.9710       752
+
+    accuracy                         0.9654      2054
+   macro avg     0.9649    0.9658    0.9652      2054
+weighted avg     0.9658    0.9654    0.9655      2054
+
+
+============================================================================
+    Model Name: MeViTSA
+    alpha = 0.7
+    ========================================================================
+    Confusion Matrix:
+    
+              Pred 0  Pred 1  Pred 2
+    Actual 0     626      12      8
+    Actual 1      17     636      3
+    Actual 2      7      26     719
+    
+    Support		: 2054
+    Macro precision	: [0.9638762]
+    Macro recall	: [0.96488982]
+    Macro F1	: 0.9642502505075603
+    Accuracy	: 0.9644595910418695
+    
+    Classification Report
+                  precision    recall  f1-score   support
+
+           0     0.9631    0.9690    0.9660       646
+           1     0.9436    0.9695    0.9564       656
+           2     0.9849    0.9561    0.9703       752
+
+    accuracy                         0.9645      2054
+   macro avg     0.9639    0.9649    0.9643      2054
+weighted avg     0.9649    0.9645    0.9645      2054
+
+============================================================================
+    Model Name: MeViTSA
+    alpha = 0.8
+    ========================================================================
+    Confusion Matrix:
+    
+              Pred 0  Pred 1  Pred 2
+    Actual 0     625      13      8
+    Actual 1      20     633      3
+    Actual 2      7      24     721
+    
+    Support		: 2054
+    Macro precision	: [0.96277925]
+    Macro recall	: [0.96373596]
+    Macro F1	: 0.9631564250819692
+    Accuracy	: 0.9634858812074002
+    
+    Classification Report
+                  precision    recall  f1-score   support
+
+           0     0.9586    0.9675    0.9630       646
+           1     0.9448    0.9649    0.9548       656
+           2     0.9850    0.9588    0.9717       752
+
+    accuracy                         0.9635      2054
+   macro avg     0.9628    0.9637    0.9632      2054
+weighted avg     0.9638    0.9635    0.9636      2054
+
+
+============================================================================
+    Model Name: MeViTSA
+    alpha = 0.9
+    ========================================================================
+    Confusion Matrix:
+    
+              Pred 0  Pred 1  Pred 2
+    Actual 0     625      13      8
+    Actual 1      20     633      3
+    Actual 2      7      24     721
+    
+    Support		: 2054
+    Macro precision	: [0.96277925]
+    Macro recall	: [0.96373596]
+    Macro F1	: 0.9631564250819692
+    Accuracy	: 0.9634858812074002
+    
+    Classification Report
+                  precision    recall  f1-score   support
+
+           0     0.9586    0.9675    0.9630       646
+           1     0.9448    0.9649    0.9548       656
+           2     0.9850    0.9588    0.9717       752
+
+    accuracy                         0.9635      2054
+   macro avg     0.9628    0.9637    0.9632      2054
+weighted avg     0.9638    0.9635    0.9636      2054
+
+    
