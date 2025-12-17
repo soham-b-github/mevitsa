@@ -1,0 +1,14 @@
+Python Runtime: 3.12.3 (main, Nov  6 2025, 13:44:16) [GCC 13.3.0]
+----------------------------------------
+streamlit: 1.51.0
+torch: 2.6.0
+torchvision: 0.21.0
+numpy: 1.26.4
+pandas: 2.3.3
+Pillow: 10.2.0
+transformers: 4.54.0
+google-cloud-vision: 3.10.2
+protobuf: 6.33.2
+clip: Git/Source Install
+ftfy: 6.3.1
+regex: 2024.11.6

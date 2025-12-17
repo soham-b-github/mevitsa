@@ -1,12 +1,12 @@
-# Make sure to download tesseract-ocr before proceeding to install all python packages
-## sudo apt install tesseract-ocr       # for Debian/Ubuntu
-## brew install tesseract               # for macOS
-## choco install tesseract              # for Windows with Chocolatey
-# --------------------------------------------
-pandas>=2.2.0
-numpy>=1.26.0
-pillow>=10.2.0
-pytesseract>=0.3.10
-scipy>=1.11.0
-statsmodels>=0.14.0
-
+streamlit
+torch
+torchvision
+numpy
+pandas
+Pillow
+transformers
+google-cloud-vision
+ftfy
+regex
+tqdm
+git+https://github.com/openai/CLIP.git
