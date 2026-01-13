@@ -9,7 +9,7 @@ import model
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(
-    page_title="MeViTSA - MELT Method",
+    page_title="MeViTSA Method",
     page_icon="🧠",
     layout="wide"
 )
@@ -34,7 +34,7 @@ st.markdown(f"""
 # --- HEADER ---
 st.markdown('<div class="decoration-bar"></div>', unsafe_allow_html=True)
 st.title("MeViTSA: Multimodal Sentiment Analysis")
-st.markdown("**Method: MELT (Multimodal Embedded Language Transformer)**")
+st.markdown("**Method: MeVITSA (Multimodal ensemble approach for Visuals Integrated Text Data for Sentiment Analysis)**")
 
 # --- SIDEBAR ---
 st.sidebar.header("Configuration")
@@ -54,7 +54,7 @@ def get_pipeline():
     return model.load_core_models()
 
 try:
-    with st.spinner("Loading MELT Models... (this may take a minute)"):
+    with st.spinner("Loading MeVITSA Models... (this may take a minute)"):
         models = get_pipeline()
     st.sidebar.success("Models Loaded Successfully!")
 except Exception as e:
@@ -82,16 +82,17 @@ if uploaded_file is not None:
     with col2:
         st.subheader("Analysis Results")
         
-        if st.button("Run MELT Analysis", type="primary"):
+        if st.button("Run MeVITSA Analysis", type="primary"):
             with st.spinner('Running inference...'):
                 try:
                     # CALL THE BACKEND
-                    results = model.melt_analysis(
+                    results = model.mevitsa_analysis(
 						image_filename,
                         image_pil, 
                         image_bytes, 
                         models, 
-                        manual_alpha=alpha_input
+                        manual_alpha=alpha_input,
+                        gcv_api=0
                     )
                     
                     # EXTRACT RESULTS

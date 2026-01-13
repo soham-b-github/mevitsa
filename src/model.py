@@ -4,6 +4,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
 import pandas as pd
+import io
+from tqdm.notebook import tqdm
 
 from PIL import Image
 from google.cloud import vision
@@ -16,6 +18,13 @@ os.makedirs(cache_dir, exist_ok=True)
 os.environ['HF_HOME'] = cache_dir
 os.environ['TRANSFORMERS_CACHE'] = cache_dir
 
+# 3. It is recommended to make the following changes using terminal instead of code
+# The reason behind this is, if the json key is used here in the code, 
+# it is not safe, as the code might be shared between individual.
+# export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/keys/service-account-key.json"
+
+# Otherwise, use the following the inside this code:
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"/path/to/your/keys/service-account-key.json"
 
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from transformers import BlipProcessor, BlipForConditionalGeneration
@@ -192,11 +201,10 @@ def get_alpha_v2(texts, img_area):
    alpha = total_text_area/img_area
    return alpha
 
-# --- MAIN INFERENCE PIPELINE (MELT) ---
-# --- MAIN INFERENCE PIPELINE (MELT) ---
-def melt_analysis(image_filename, image_pil, image_bytes, models_dict, manual_alpha=None):
+# --- MAIN INFERENCE PIPELINE (MeVITSA) ---
+def mevitsa_analysis(image_filename, image_pil, image_bytes, models_dict, manual_alpha=None, gcv_api=1, ft=1):
     """
-    The MELT Method:
+    The MeVITSA Method:
     1. Extract Text (OCR from CSV) -> if failed, Generate Caption (BLIP).
     2. Get Text Sentiment (RoBERTa/T5).
     3. Get Image Sentiment (CLIP).
@@ -217,22 +225,29 @@ def melt_analysis(image_filename, image_pil, image_bytes, models_dict, manual_al
     final_text = ""
     source = "BLIP" # Default source
     
-    # Check if image exists in the CSV data
-    # Note: using .values ensures we check the content, not the index
-    if image_filename in all_filenames.values:
-        matched_row = df.loc[df["filename"] == image_filename].iloc[0]
-        ocr_text = matched_row["OCR"]
-    
-    # Logic: If OCR exists and is not empty/NaN, use it. Otherwise, use BLIP.
-    if pd.notna(ocr_text) and str(ocr_text).strip() != "":
-        final_text = str(ocr_text)
+    if gcv_api==1:
+        ocr_text, ocr_annotation = get_ocr_text(image_bytes)
         source = "OCR"
+        final_text = ocr_text
     else:
-        # Fault Tolerance: Generate Caption via BLIP
-        source = "BLIP"
-        inputs = models_dict["blip_processor"](images=image_pil, return_tensors="pt").to(device)
-        out = models_dict["blip_model"].generate(**inputs)
-        final_text = models_dict["blip_processor"].decode(out[0], skip_special_tokens=True)
+		# Check if image exists in the CSV data
+		# Note: using .values ensures we check the content, not the index
+        if image_filename in all_filenames.values:
+            matched_row = df.loc[df["filename"] == image_filename].iloc[0]
+            ocr_text = matched_row["OCR"]
+            # Logic: If OCR exists and is not empty/NaN, use it. Otherwise, use BLIP.
+            if pd.notna(ocr_text) and str(ocr_text).strip() != "":
+                final_text = str(ocr_text)
+                source = "OCR"
+        else:
+            if ft==1:
+                # Fault Tolerance: Generate Caption via BLIP
+                source = "BLIP"
+                inputs = models_dict["blip_processor"](images=image_pil, return_tensors="pt").to(device)
+                out = models_dict["blip_model"].generate(**inputs)
+                final_text = models_dict["blip_processor"].decode(out[0], skip_special_tokens=True)
+            else:
+                final_text = ""
     
     # Tokenize and Predict
     inputs = models_dict["text_tokenizer"](
@@ -247,7 +262,7 @@ def melt_analysis(image_filename, image_pil, image_bytes, models_dict, manual_al
         text_outputs = models_dict["text_model"](**inputs)
         text_probs = F.softmax(text_outputs.logits, dim=1).cpu().numpy().flatten()
 
-    # 3. FUSION (MELT LOGIC)
+    # 3. FUSION (MeVITSA LOGIC)
     # ----------------------
     if manual_alpha is not None:
         alpha = manual_alpha
@@ -270,3 +285,117 @@ def melt_analysis(image_filename, image_pil, image_bytes, models_dict, manual_al
         "text_source": source,
         "alpha_used": alpha
     }
+
+
+# ---------------- CONFIGURATION ----------------
+# Path to your image folder
+DATASET_FOLDER = "./../../dataset/basket_unique" 
+
+# Ensure models are loaded
+# if 'models' not in locals():
+print("Loading models...")
+models = load_core_models()
+
+# ---------------- HELPER: PARSE LABEL ----------------
+def get_true_label(filename):
+    """
+    Parses sentiment from filename.
+    Assumes format like: 'positive_123.jpg' or '123_negative.jpg'
+    """
+    filename_lower = filename.lower()
+    if "positive" in filename_lower:
+        return "Positive"
+    elif "negative" in filename_lower:
+        return "Negative"
+    elif "neutral" in filename_lower:
+        return "Neutral"
+    return None
+
+# ---------------- MAIN ANALYSIS LOOP ----------------
+results = []
+valid_extensions = ('.jpg', '.jpeg', '.png', ".JPG")
+image_files = [f for f in os.listdir(DATASET_FOLDER) if f.lower().endswith(valid_extensions)]
+
+print(f"Found {len(image_files)} images. Starting analysis...")
+
+for img_name in tqdm(image_files):
+    img_path = os.path.join(DATASET_FOLDER, img_name)
+    
+    # 1. Get Ground Truth
+    true_label = get_true_label(img_name)
+    if not true_label:
+        continue # Skip if no label found in filename
+        
+    # 2. Prepare Image
+    try:
+        image_pil = Image.open(img_path).convert("RGB")
+        # specific to your pipeline: needs bytes for OCR check (if using API)
+        # or filename lookup if relying on CSV
+        with open(img_path, "rb") as f:
+            image_bytes = f.read()
+            
+        # 3. Run MeViTSA Inference
+        # Note: We pass img_name because your model looks it up in the CSV for OCR
+        prediction = mevitsa_analysis(
+            image_filename=img_name, 
+            image_pil=image_pil, 
+            image_bytes=image_bytes, 
+            models_dict=models,
+            gcv_api=0,
+            ft=0
+        )
+        # if prediction['text_source']=="BLIP":
+        #     print(prediction['text_content'])
+        # 4. Log Data
+        results.append({
+            "filename": img_name,
+            "true_label": true_label,
+            "pred_label": prediction['final_class'],
+            "confidence": max(prediction['final_probs']),
+            "text_source": prediction['text_source'],
+            "alpha": prediction['alpha_used'],
+            "extracted_text": prediction['text_content'] # [:50] + "..." # Truncate for display
+        })
+        
+    except Exception as e:
+        print(f"Error processing {img_name}: {e}")
+    # print(results)
+    # break
+
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# ---------------- METRICS & VISUALIZATION ----------------
+df_results = pd.DataFrame(results)
+# Save the DataFrame to a CSV file
+df_results.to_csv("mevitsa_ft1__evaluation_results.csv", index=False)
+print("✅ Predictions saved to: mevitsa_ft1__evaluation_results.csv")
+
+# 1. Basic Accuracy
+acc = accuracy_score(df_results['true_label'], df_results['pred_label'])
+print(f"\n✅ Overall Accuracy: {acc:.4%}")
+
+# 2. Classification Report
+print("\n📊 Classification Report:")
+report = classification_report(df_results['true_label'], df_results['pred_label'], digits=4)
+print(report)
+
+with open("mevtisa_ft1__classification_report.txt", "w") as f:
+    f.write("MeViTSA Performance Report\n")
+    f.write("==========================\n")
+    f.write(f"Overall Accuracy: {acc:.4%}\n\n")
+    f.write(report)
+
+print("✅ Report saved to: mevtisa_ft1__classification_report.txt")
+
+# 3. Confusion Matrix
+plt.figure(figsize=(8, 6))
+labels = ["Negative", "Neutral", "Positive"]
+cm = confusion_matrix(df_results['true_label'], df_results['pred_label'], labels=labels)
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=labels, yticklabels=labels)
+plt.title(f"MeViTSA Confusion Matrix (Acc: {acc:.4f})")
+plt.xlabel("Predicted")
+plt.ylabel("True")
+plt.savefig("mevitsa_ft1__confusion_matrix.png", dpi=300, bbox_inches='tight')
+plt.show()
