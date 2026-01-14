@@ -41,7 +41,7 @@ st.sidebar.header("Configuration")
 use_auto_alpha = st.sidebar.checkbox("Auto-calculate alpha (text area)", value=True)
 
 if not use_auto_alpha:
-    alpha_input = st.sidebar.slider("Manual Fusion Weight (Alpha)", 0.0, 1.0, 0.5)
+    alpha_input = st.sidebar.slider("Manual fusion weight (alpha)", 0.0, 1.0, 0.5)
 else:
     alpha_input = None  # Signal to backend to calculate it
 
@@ -54,15 +54,15 @@ def get_pipeline():
     return model.load_core_models()
 
 try:
-    with st.spinner("Loading MeVITSA Models... (this may take a minute)"):
+    with st.spinner("Loading models for MeVITSA framework... (this may take a minute)"):
         models = get_pipeline()
-    st.sidebar.success("Models Loaded Successfully!")
+    st.sidebar.success("Models loaded successfully!")
 except Exception as e:
     st.error(f"Error loading models: {e}")
     st.stop()
 
 # --- MAIN UI ---
-uploaded_file = st.file_uploader("Upload an Image", type=["jpg", "png", "jpeg", "JPG"])
+uploaded_file = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg", "JPG"])
 image_filename = ""
 
 if uploaded_file is not None:
@@ -87,7 +87,6 @@ if uploaded_file is not None:
                 try:
                     # CALL THE BACKEND
                     results = model.mevitsa_analysis(
-						image_filename,
                         image_pil, 
                         image_bytes, 
                         models, 
