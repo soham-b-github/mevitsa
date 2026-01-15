@@ -10,21 +10,21 @@
 * The integration of a novel Fault-Tolerance (FT) mechanism that ensures architectural robustness and handles out-of-distribution (OOD) data which are faulty inputs
 * Extending and a comprehensive curation and refinement of the dataset DocImsent introduced by Ahuja et. al (2024) to improve data quality and volume of the dataset.
 
-## 🛠️ Architecture
+## Architecture
 
 ![framework-arch](results/framework.png)
 
-## ⚠️ Important Usage Note: Trained Models Required
+## Important note about usage: Trained models required
 
 The file `app.py` included in this repository serves as the **frontend interface** for the inference engine. 
 
-> **🛑 CRITICAL:** > This application **will not function** without the pre-trained model weights (e.g., `best_model.pth` or checkpoint files). Due to file size limitations, these model files are **not included** in this repository.
+> **CRITICAL:** > This application **will not function** without the pre-trained model weights (e.g., `best_model.pth` or checkpoint files). Due to file size limitations, these model files are **not included** in this repository.
 
 **How to get the models:**
 Please **contact the author** directly to request access to the trained model files. Once received, place them in the root directory (or the specified `models/` folder) before running the application.
 
 
-## 📦 Installation
+## Installation
 
 1.  **Clone the repository**
     ```bash
@@ -32,20 +32,20 @@ Please **contact the author** directly to request access to the trained model fi
     cd msa
     ```
 
-2.  **Install Dependencies**
+2.  **Install dependencies**
     ```bash
     pip install -r requirements.txt
     ```
     *Key requirements:* `torch`, `transformers`, `google-cloud-vision`, `clip` (OpenAI), `Pillow`, `flask` / `streamlit` (for app.py).
 
-3.  **Setup Google Cloud Credentials**
+3.  **Setup Google Cloud credentials**
     * Export your service account key:
         ```bash
         export GOOGLE_APPLICATION_CREDENTIALS="path/to/your/service-account-file.json"
         ```
 
 
-## 🚀 Running the App
+## Running the App
 
 Once you have obtained the trained model files from the author:
 
