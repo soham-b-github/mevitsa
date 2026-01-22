@@ -12,7 +12,7 @@
 
 ## Architecture
 
-![framework-arch](results/framework.png)
+![framework-arch](assets/framework.png)
 
 ## Important note about usage: Trained models required
 
