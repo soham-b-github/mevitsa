@@ -1,0 +1,28 @@
+============================================================================
+    Model Name: roberta-base + xception
+    ============================================================================
+    Confusion Matrix:
+    
+              Pred 0  Pred 1  Pred 2
+    Actual 0     567      39      40
+    Actual 1      39     574      43
+    Actual 2      24      34     694
+    
+    Support		: 2054
+    Macro precision	: [0.89345015]
+    Macro recall	: [0.89186044]
+    Macro F1	: 0.8925137811210312
+    Accuracy	: 0.8933787731256085
+    
+    Classification Report
+                  precision    recall  f1-score   support
+
+           0     0.9000    0.8777    0.8887       646
+           1     0.8872    0.8750    0.8810       656
+           2     0.8932    0.9229    0.9078       752
+
+    accuracy                         0.8934      2054
+   macro avg     0.8935    0.8919    0.8925      2054
+weighted avg     0.8934    0.8934    0.8932      2054
+
+    

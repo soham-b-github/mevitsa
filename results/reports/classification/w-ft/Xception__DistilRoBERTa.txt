@@ -1,0 +1,28 @@
+============================================================================
+    Model Name: distilroberta-base + xception
+    ============================================================================
+    Confusion Matrix:
+    
+              Pred 0  Pred 1  Pred 2
+    Actual 0     569      41      36
+    Actual 1      38     578      40
+    Actual 2      18      41     693
+    
+    Support		: 2054
+    Macro precision	: [0.89577598]
+    Macro recall	: [0.89448169]
+    Macro F1	: 0.8950066807585856
+    Accuracy	: 0.8958130477117819
+    
+    Classification Report
+                  precision    recall  f1-score   support
+
+           0     0.9104    0.8808    0.8954       646
+           1     0.8758    0.8811    0.8784       656
+           2     0.9012    0.9215    0.9112       752
+
+    accuracy                         0.8958      2054
+   macro avg     0.8958    0.8945    0.8950      2054
+weighted avg     0.8960    0.8958    0.8958      2054
+
+    

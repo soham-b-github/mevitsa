@@ -1,0 +1,22 @@
+{
+  "text_model": {
+    "name": "t5-base",
+    "weights_path": "T5__best_model.pt",
+    "max_length": 128
+  },
+  "vision_model": {
+    "name": "ViT-B/32",
+    "weights_path": "CLIP__best_model.pt"
+  },
+  "caption_model": {
+    "name": "Salesforce/blip-image-captioning-base"
+  },
+  "cache_dir": "./model_cache",
+  "dataset_path": "./../../dataset/docimsentv1/docimsentv1.csv",
+  "num_classes": 3,
+  "labels": {
+    "0": "Negative",
+    "1": "Neutral",
+    "2": "Positive"
+  }
+}

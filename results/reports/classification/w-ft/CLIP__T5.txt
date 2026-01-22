@@ -1,0 +1,30 @@
+============================================================================
+    Model Name: t5-base + ViT-B/32
+    ============================================================================
+    BLIP included
+    ________________    
+    Confusion Matrix:
+    
+              Pred 0  Pred 1  Pred 2
+    Actual 0     605      24      17
+    Actual 1      16     633      7
+    Actual 2      9      40     703
+    
+    Support		: 2054
+    Macro precision	: [0.945161]
+    Macro recall	: [0.94543732]
+    Macro F1	: 0.9448722119528036
+    Accuracy	: 0.944985394352483
+    
+    Classification Report
+                  precision    recall  f1-score   support
+
+           0     0.9603    0.9365    0.9483       646
+           1     0.9082    0.9649    0.9357       656
+           2     0.9670    0.9348    0.9506       752
+
+    accuracy                         0.9450      2054
+   macro avg     0.9452    0.9454    0.9449      2054
+weighted avg     0.9461    0.9450    0.9451      2054
+
+    

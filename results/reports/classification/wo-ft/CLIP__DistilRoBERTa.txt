@@ -1,0 +1,28 @@
+============================================================================
+    Model Name: distilroberta-base + ViT-B/32
+    ============================================================================
+    Confusion Matrix:
+    
+              Pred 0  Pred 1  Pred 2
+    Actual 0     604      22      20
+    Actual 1      16     633      7
+    Actual 2      12      27     713
+    
+    Support		: 2054
+    Macro precision	: [0.94912074]
+    Macro recall	: [0.94935395]
+    Macro F1	: 0.949059777644034
+    Accuracy	: 0.9493670886075949
+    
+    Classification Report
+                  precision    recall  f1-score   support
+
+           0     0.9557    0.9350    0.9452       646
+           1     0.9282    0.9649    0.9462       656
+           2     0.9635    0.9481    0.9558       752
+
+    accuracy                         0.9494      2054
+   macro avg     0.9491    0.9494    0.9491      2054
+weighted avg     0.9498    0.9494    0.9494      2054
+
+    
