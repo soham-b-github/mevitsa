@@ -88,7 +88,8 @@ python3 evaluation.py --DATASET_PATH=./../data/my_new_dataset
 
 Recommended directory structure for `data/` folder:
 
-```mevitsa/
+```
+mevitsa/
 ├── data/
 │   ├── docimsentv1-samples/  # Existing sample data
 │   ├── external-samples/     # Existing sample data
