@@ -8,6 +8,7 @@ google-cloud-vision-OCR-api/
 # Ignore the following files/folders from src
 src/model_cache/
 src/trained/
+data/docimsentv1/
 src/__pycache__/
 **/__pycache__/
 
