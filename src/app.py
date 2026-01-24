@@ -5,7 +5,7 @@ import pandas as pd
 import io
 import json
 import altair as alt
-from model import MeVITSA # type: ignore
+from model import MeViTSA # type: ignore
 
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' # Suppress most logs
@@ -172,7 +172,7 @@ st.markdown(f"""
 def get_mevitsa_engine():
     with open("./../configs/config-models.json") as f:
         config = json.load(f)
-    return MeVITSA(config)
+    return MeViTSA(config)
 
 
 if 'engine_loaded' not in st.session_state:

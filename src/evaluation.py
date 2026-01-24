@@ -1,20 +1,21 @@
 import os
 import pandas as pd
+import argparse
 import torch
 import json
 from tqdm import tqdm
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 import matplotlib.pyplot as plt
 import seaborn as sns
-from model import MeVITSA # type: ignore
+from model import MeViTSA # type: ignore
 from utils.data_loader import DatasetHandler
 
 def run_evaluation(dataset_path):
     # 1. Setup
-    with open("configs/config-models.json") as f:
+    with open("./../configs/config-models.json") as f:
         config = json.load(f)
     
-    engine = MeVITSA(config)
+    engine = MeViTSA(config)
     dh = DatasetHandler(dataset_path)
     image_files = dh.get_image_files()
     
@@ -71,6 +72,18 @@ def run_evaluation(dataset_path):
     plt.show()
 
 if __name__ == "__main__":
-    # Update this path to your dataset location
-    DATASET_PATH = "./../../dataset/docimsentv1"
-    run_evaluation(DATASET_PATH)
+    parser = argparse.ArgumentParser(description="Run evaluation on a specific dataset.")
+    
+    # Adding the command line argument
+    parser.add_argument(
+        "--DATASET_PATH", 
+        type=str, 
+        default="./../data/docimsentv1-samples", 
+        help="Path to the dataset folder (e.g., ./../data/your_dataset)"
+    )
+    
+    args = parser.parse_args()
+    
+    # Access the path via args.DATASET_PATH
+    print(f"Starting evaluation using dataset at: {args.DATASET_PATH}")
+    run_evaluation(args.DATASET_PATH)

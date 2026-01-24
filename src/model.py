@@ -8,7 +8,7 @@ from utils.fault_tolerance import load_blip, generate_fault_tolerant_caption
 from utils.ocr_engine import get_ocr_text
 from utils.data_loader import DatasetHandler
 
-class MeVITSA:
+class MeViTSA:
     def __init__(self, config):
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.config = config
@@ -70,7 +70,7 @@ class MeVITSA:
         else:
             t_probs = np.array([0.0, 0.0, 0.0])
 
-        # 5. MeVITSA Weighted Fusion
+        # 5. MeViTSA Weighted Fusion
         alpha = manual_alpha if manual_alpha is not None else 0.5
         final_probs = (alpha * t_probs) + ((1 - alpha) * v_probs)
         print(t_probs)

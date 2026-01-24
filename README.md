@@ -20,8 +20,27 @@ The file `app.py` included in this repository serves as the **frontend interface
 
 > **CRITICAL:** > This application **will not function** without the pre-trained model weights (e.g., `best_model.pth` or checkpoint files). Due to file size limitations, these model files are **not included** in this repository.
 
+### Required Directory Structure
+To run the application successfully, you must maintain the following file structure. Ensure your downloaded models are placed specifically in the src/trained/ directory:
+
+```mevitsa/
+├── data/
+├── src/
+│   ├── app.py             # Main Application
+|   ├── model.py           # framework code   
+|   ├── evaluation.py      # evaluation code
+│   ├── trained/           # <--- PLACE MODELS HERE
+│   │   ├── CLIP__best_model.pt
+│   │   └── T5__best_model.pt
+│   └── utils/             # (Supporting scripts)
+|   └── models/            # (Code for each branch)
+├── configs/
+│   └── config-models.json # (Configuration settings)
+└── requirements.txt
+```
+
 **How to get the models:**
-Please **contact the author** directly to request access to the trained model files. Once received, place them in the root directory (or the specified `models/` folder) before running the application.
+Please **contact the author** directly to request access to the trained model files. Once received, place them in the `src/trained/` folder before running the application.
 
 
 ## Installation
@@ -55,3 +74,25 @@ Once you have obtained the trained model files from the author:
     streamlit run app.py
     ```
 3.  Upload an image (e.g., a meme or poster) to receive the predicted sentiment (Positive, Negative, or Neutral).
+
+## Evaluation setup
+
+To evaluate the framework, you can either use the samples provided in this repository or integrate your own dataset. The system expects a specific directory hierarchy within the `data/` folder:
+
+- **Using provided samples**: The repository includes sample images located in `data/docimsentv1-samples/` and `data/external-samples/ `. These are ready for immediate testing.
+- **Using custom datasets**: If you wish to evaluate the framework on a full dataset, create a new subdirectory within the `data/` folder and place your images there.
+- Run the following code in the terminal:
+```bash
+python3 evaluation.py --DATASET_PATH=./../data/my_new_dataset
+```
+
+Recommended directory structure for `data/` folder:
+
+```mevitsa/
+├── data/
+│   ├── docimsentv1-samples/  # Existing sample data
+│   ├── external-samples/     # Existing sample data
+│   └── [your-dataset-name]/  # <--- PLACE CUSTOM DATASETS HERE
+│       ├── image_001.jpg
+│       └── image_002.png
+```
