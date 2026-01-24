@@ -1,12 +1,12 @@
 {
   "text_model": {
     "name": "t5-base",
-    "weights_path": "T5__best_model.pt",
+    "weights_path": "./trained/T5__best_model.pt",
     "max_length": 128
   },
   "vision_model": {
     "name": "ViT-B/32",
-    "weights_path": "CLIP__best_model.pt"
+    "weights_path": "./trained/CLIP__best_model.pt"
   },
   "caption_model": {
     "name": "Salesforce/blip-image-captioning-base"

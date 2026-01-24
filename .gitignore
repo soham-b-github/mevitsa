@@ -5,8 +5,9 @@ notebooks/.ipynb_checkpoints/
 # Ignore unwanted folder
 google-cloud-vision-OCR-api/
 
-# Ignore the following files from src
+# Ignore the following files/folders from src
 src/model_cache/
+src/trained/
 src/__pycache__/
 **/__pycache__/
 
@@ -18,4 +19,3 @@ src/__pycache__/
 !notebooks/
 !results/
 !notebooks/*.ipynb
-
