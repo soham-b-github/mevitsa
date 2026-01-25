@@ -11,9 +11,9 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' # Suppress most logs
 
 # --- Logo ---
-logo_path = "./../assets/logo.png"
+logo_path = "./../assets/logo/logo.png"
 logo_image = Image.open(logo_path) if os.path.exists(logo_path) else "M"
-dark_logo_image = Image.open("./../assets/logo-darkbg.png") if os.path.exists("./../assets/logo-darkbg.png") else None
+dark_logo_image = Image.open("./../assets/logo/logo-darkbg.png") if os.path.exists("./../assets/logo/logo-darkbg.png") else None
 st.set_page_config(page_title="MeViTSA Method", page_icon=logo_image, layout="wide")
 
 bg_color = "#121212"
