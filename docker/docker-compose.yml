@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mevitsa:
+    build: .
+    image: soham-b-github/mevitsa:latest
+    container_name: mevitsa_container
+    ports:
+      - "8501:8501"
+    volumes:
+      # THE GATEKEEPER MOUNT:
+      # This connects the weights you give the user to the app
+      - ./src/trained:/app/src/trained
+      
+      # Optional: Persistence for local samples or cache
+      - ./src/model_cache:/app/src/model_cache
+    restart: unless-stopped

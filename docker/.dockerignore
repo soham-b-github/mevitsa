@@ -1,0 +1,9 @@
+.git
+.ipynb_checkpoints
+**/__pycache__
+src/trained/*.pt
+src/model_cache/
+results/
+data/docimsentv1/
+Dockerfile
+docker-compose.yml
