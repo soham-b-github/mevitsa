@@ -1,0 +1,12 @@
+Mean values:
+	fused_test_acc: 0.9685666699
+	fused_test_precision_macro: 0.96833166792
+	fused_test_recall_macro: 0.96847276196
+	fused_test_f1_macro: 0.96839685016
+
+
+Standard deviation values:
+	fused_test_acc: 0.03733156729
+	fused_test_precision_macro: 0.03683334212
+	fused_test_recall_macro: 0.03669842791
+	fused_test_f1_macro: 0.03666623186
