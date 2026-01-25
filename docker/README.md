@@ -20,7 +20,7 @@ docker run -d -p 8501:8501 --init --rm -it --gpus=all --ipc=host \
 ## Usage
 ```bash
 # Frontend UI
-python3 src/app.py
+streamlit run src/app.py
 
 # Evaluation
 python3 src/evaluation.py
