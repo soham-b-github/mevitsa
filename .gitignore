@@ -9,6 +9,7 @@ google-cloud-vision-OCR-api/
 src/model_cache/
 src/trained/
 data/docimsentv1/
+data/error-analysis-samples/
 src/__pycache__/
 **/__pycache__/
 
