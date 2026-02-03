@@ -12,6 +12,7 @@ data/docimsentv1/
 data/error-analysis-samples/
 src/__pycache__/
 **/__pycache__/
+notebooks/
 
 # Allowlisted files/folders
 !.gitignore

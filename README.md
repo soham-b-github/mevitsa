@@ -10,7 +10,7 @@
 * The integration of a novel Fault-Tolerance (FT) mechanism that ensures architectural robustness and handles out-of-distribution (OOD) data which are faulty inputs
 * Extending and a comprehensive curation and refinement of the dataset DocImsent introduced by Ahuja et. al (2024) to improve data quality and volume of the dataset.
 
-## Architecture
+<!--## Architecture
 
 ![framework-arch](assets/framework.png)
 
@@ -38,7 +38,7 @@ To run the application successfully, you must maintain the following file struct
 │   └── config-models.json # (Configuration settings)
 └── requirements.txt
 ```
-
+-->
 **How to get the models:**
 Please **contact the author** directly to request access to the trained model files. Once received, place them in the `src/trained/` folder before running the application.
 
@@ -97,3 +97,6 @@ mevitsa/
 │       ├── image_001.jpg
 │       └── image_002.png
 ```
+## Citation
+
+This repository is associated with a research paper currently under communication with ICPR. Citation information will be made available after the paper is accepted and published.
