@@ -1,8 +1,8 @@
 # MeViTSA: Multimodal Ensemble Approach for Sentiment Analysis of Visuals Integrated Text Data
 
-**Authors:** Soham Bhattacharya<sup>1,3</sup>, Ali Reza Alaei<sup>2</sup> & Umapada Pal<sup>3</sup>
+**Authors:** Soham Bhattacharya<sup>1,4</sup>, Ali Reza Alaei<sup>2</sup>, Sukalpa Chanda <sup>3</sup> & Umapada Pal<sup>4</sup>
 
-**Affiliated institutions:** <sup>1</sup>Ramakrishna Mission Vivekananda Educational and Research Institute Belur, India; <sup>2</sup>Southern Cross University, Australia; <sup>3</sup>Indian Statistical Institute Kolkata, India;
+**Affiliated institutions:** <sup>1</sup>Ramakrishna Mission Vivekananda Educational and Research Institute Belur, India; <sup>2</sup>Southern Cross University, Australia; <sup>3</sup>Østfold University of Applied Sciences, Norway; <sup>4</sup>Indian Statistical Institute Kolkata, India;
 
 
 ### Primary contributions
@@ -18,7 +18,7 @@
 
 The file `app.py` included in this repository serves as the **frontend interface** for the inference engine. 
 
-> **CRITICAL:** > This application **will not function** without the pre-trained model weights (e.g., `best_model.pth` or checkpoint files). Due to file size limitations, these model files are **not included** in this repository.
+> **CRITICAL:** > This application **will not function** without the pre-trained model weights (e.g., `best_model.pth` or checkpoint files). Our pre-trained model weights shall be shared only for academic purposes.
 
 ### Required Directory Structure
 To run the application successfully, you must maintain the following file structure. Ensure your downloaded models are placed specifically in the src/trained/ directory:
@@ -47,8 +47,8 @@ Please **contact the author** directly to request access to the trained model fi
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/soham-b-github/msa.git](https://github.com/soham-b-github/msa.git)
-    cd msa
+    git clone [https://github.com/soham-b-github/mevitsa.git](https://github.com/soham-b-github/mevitsa.git)
+    cd mevitsa
     ```
 
 2.  **Install dependencies**
@@ -99,4 +99,4 @@ mevitsa/
 ```
 ## Citation
 
-This repository is associated with a research paper currently under communication with ICPR. Citation information will be made available after the paper is accepted and published.
+This repository is associated with a research paper currently under communication with ICPR 2026 workshop. Citation information will be made available after the paper is accepted and published.
