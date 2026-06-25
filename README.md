@@ -91,8 +91,8 @@ Recommended directory structure for `data/` folder:
 ```
 mevitsa/
 ├── data/
-│   ├── docimsentv1-samples/  # Existing sample data
-│   ├── external-samples/     # Existing sample data
+│   ├── docimsentv1-samples/  # Will be publicly available post publication
+│   ├── external-samples/     # Existing sample data from the web
 │   └── [your-dataset-name]/  # <--- PLACE CUSTOM DATASETS HERE
 │       ├── image_001.jpg
 │       └── image_002.png
