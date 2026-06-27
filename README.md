@@ -4,9 +4,11 @@
 
 **Affiliated institutions:** <sup>1</sup>Ramakrishna Mission Vivekananda Educational and Research Institute Belur, India; <sup>2</sup>Southern Cross University, Australia; <sup>3</sup>Østfold University of Applied Sciences, Norway; <sup>4</sup>Indian Statistical Institute Kolkata, India;
 
+<!--
 <p align="center">
   <img src="assets/affiliations.png" alt="affiliations" width="250"/>
 </p>
+--->
 
 ### Primary contributions
 * The development of an enhanced MSA framework that demonstrates superior performance over the existing baselines
