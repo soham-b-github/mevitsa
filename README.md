@@ -1,3 +1,13 @@
+---
+title: Mevitsa Demo
+emoji: 🚀
+colorFrom: blue
+colorTo: red
+sdk: gradio
+app_file: src/app.py
+pinned: false
+---
+
 # MeViTSA: Multimodal Ensemble Approach for Sentiment Analysis of Visuals Integrated Text Data
 
 **Authors:** Soham Bhattacharya<sup>1,4</sup>, Ali Reza Alaei<sup>2</sup>, Sukalpa Chanda <sup>3</sup> & Umapada Pal<sup>4</sup>
