@@ -12,7 +12,7 @@
     "name": "Salesforce/blip-image-captioning-base"
   },
   "cache_dir": "./model_cache",
-  "dataset_path": "./dataset/docimsentv1.csv",
+  "dataset_path": "./dataset/docimsentv1_features.csv",
   "num_classes": 3,
   "labels": {
     "0": "Negative",
