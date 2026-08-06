@@ -45,22 +45,24 @@ def setup_cloud_environment():
             # Move it to the exact location your config-models.json expects
             shutil.copy(cached_path, expected_path)
 
-    # -- Kaggle Dataset --
-    # DOWNLOAD DATASET FROM KAGGLE
-    os.environ['KAGGLE_USERNAME'] = st.secrets["KAGGLE_USERNAME"]
-    os.environ['KAGGLE_KEY'] = st.secrets["KAGGLE_KEY"]
-    
-    kaggle_dataset_id = "sohambhattacharyaa/musait" # <-- UPDATE THIS
-    csv_target_path = "./dataset/docimsentv1.csv" 
+    # -- Download CSV Dataset --
+    csv_target_path = "./dataset/docimsentv1.csv"
     download_dir = os.path.dirname(csv_target_path)
-    
     os.makedirs(download_dir, exist_ok=True)
-    
+
     if not os.path.exists(csv_target_path):
-        print("Downloading dataset from Kaggle...")
-        api = KaggleApi()
-        api.authenticate()
-        api.dataset_download_files(kaggle_dataset_id, path=download_dir, unzip=True)
+        print("Downloading docimsentv1.csv from HuggingFace...")
+        
+        # If your CSV is uploaded to the root of your HF repo, it's just the filename.
+        # If you put it in a folder on HF, change this to "folder_name/docimsentv1.csv"
+        hf_csv_path = "docimsentv1_features.csv"
+        
+        cached_csv = hf_hub_download(
+            repo_id=hf_repo_id, 
+            filename=hf_csv_path, 
+            token=hf_token
+        )
+        shutil.copy(cached_csv, csv_target_path)
         
     return True
 
