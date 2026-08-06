@@ -229,7 +229,7 @@ st.markdown(f"""
 # --- ENGINE INITIALIZATION ---
 @st.cache_resource(show_spinner=False)
 def get_mevitsa_engine():
-    with open("./../configs/config-models.json") as f:
+    with open("configs/config-models.json") as f:
         config = json.load(f)
     return MeViTSA(config)
 
