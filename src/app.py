@@ -7,8 +7,65 @@ import json
 import altair as alt
 from model import MeViTSA # type: ignore
 
+
+# ==========================================
+# SETUP CLOUD ENVIRONMENT METHOD
+# ==========================================
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' # Suppress most logs
+from huggingface_hub import hf_hub_download
+from kaggle.api.kaggle_api_extended import KaggleApi
+import shutil
+
+@st.cache_resource
+def setup_cloud_environment():
+    # -- HuggingFace Models --
+    # DOWNLOAD MODELS FROM HUGGINGFACE
+    hf_token = st.secrets["HF_TOKEN"]
+    hf_repo_id = "soham-b/mevitsa"
+    hf_folder_name = "trained-models"
+    
+    models_to_download = ["T5__best_model.pt", "CLIP__best_model.pt"]
+    os.makedirs("./trained", exist_ok=True)
+    
+    for filename in models_to_download:
+        expected_path = os.path.join("./trained", filename)
+        
+        if not os.path.exists(expected_path):
+            print(f"Downloading {filename} from HuggingFace...")
+            
+            hf_file_path = f"{hf_folder_name}/{filename}"
+            
+            cached_path = hf_hub_download(
+                repo_id=hf_repo_id, 
+                filename=hf_file_path,
+                token=hf_token
+            )
+            
+            # Move it to the exact location your config-models.json expects
+            shutil.copy(cached_path, expected_path)
+
+    # -- Kaggle Dataset --
+    # DOWNLOAD DATASET FROM KAGGLE
+    os.environ['KAGGLE_USERNAME'] = st.secrets["KAGGLE_USERNAME"]
+    os.environ['KAGGLE_KEY'] = st.secrets["KAGGLE_KEY"]
+    
+    kaggle_dataset_id = "sohambhattacharyaa/musait" # <-- UPDATE THIS
+    csv_target_path = "./dataset/docimsentv1.csv" 
+    download_dir = os.path.dirname(csv_target_path)
+    
+    os.makedirs(download_dir, exist_ok=True)
+    
+    if not os.path.exists(csv_target_path):
+        print("Downloading dataset from Kaggle...")
+        api = KaggleApi()
+        api.authenticate()
+        api.dataset_download_files(kaggle_dataset_id, path=download_dir, unzip=True)
+        
+    return True
+
+setup_cloud_environment()
+
 
 # --- Logo ---
 logo_path = "./../assets/logo/logo.png"
