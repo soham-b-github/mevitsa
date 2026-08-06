@@ -46,7 +46,7 @@ def setup_cloud_environment():
             shutil.copy(cached_path, expected_path)
 
     # -- Download CSV Dataset --
-    csv_target_path = "./dataset/docimsentv1.csv"
+    csv_target_path = "./dataset/docimsentv1_features.csv"
     download_dir = os.path.dirname(csv_target_path)
     os.makedirs(download_dir, exist_ok=True)
 
