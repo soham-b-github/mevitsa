@@ -7,7 +7,7 @@ Pillow==10.2.0
 huggingface_hub
 kaggle
 protobuf==3.20.3
-transformers==4.54.0
+transformers
 google-cloud-vision==3.10.2
 ftfy==6.3.1
 regex==2024.11.6
