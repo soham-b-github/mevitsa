@@ -132,7 +132,7 @@ def analyze_image(img_path, use_auto_alpha, alpha_input, gcv_on, ft_on):
         <div style="border-left: 5px solid {res_color}; padding-left: 15px; margin-top: 20px;">
             <h2 style="color: {res_color}; margin:0;">{res["label"]}</h2>
             <p style="font-size: 18px; color: #5f6368;">Confidence: <b>{np.max(res['probs'])*100:.2f}%</b></p>
-            <p style="font-size: 14px; color: #E0E0E0;">Alpha Used: <b>{res['alpha']:.2f}</b></p>
+            <p style="font-size: 14px; color: #5f6368;">Alpha Used: <b>{res['alpha']:.2f}</b></p>
         </div>
         """
         
@@ -165,8 +165,33 @@ def analyze_image(img_path, use_auto_alpha, alpha_input, gcv_on, ft_on):
             "Positive": float(res["probs"][2])
         }
 
+        # --- Custom HTML Progress Bars ---
+        sentiment_data = [
+            ("Negative", float(res["probs"][0]), "#EA4335"), # Google Red
+            ("Neutral", float(res["probs"][1]), "#FBBC05"),  # Google Yellow
+            ("Positive", float(res["probs"][2]), "#34A853")  # Google Green
+        ]
+        
+        bars_html = "<div style='display: flex; flex-direction: column; gap: 12px; margin-top: 15px;'>"
+        for label, prob, color in sentiment_data:
+            pct = prob * 100
+            bars_html += f"""
+            <div>
+                <div style='display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 4px;'>
+                    <span style='color: {color};'>{label}</span>
+                    <span style='color: #5f6368;'>{pct:.1f}%</span>
+                </div>
+                <div style='width: 100%; background-color: #e5e7eb; border-radius: 999px; height: 8px;'>
+                    <div style='width: {pct}%; background-color: {color}; height: 100%; border-radius: 999px;'></div>
+                </div>
+            </div>
+            """
+        bars_html += "</div>"
+        
         # return text_source, text_content, html_out, color_scale
-        return text_source, text_content, html_out, confidences
+        # return text_source, text_content, html_out, confidences
+        return text_source, text_content, html_out, bars_html
+
 
     except Exception as e:
         return "Error", f"An error occurred: {str(e)}", f"<div style='color:red;'>Error during inference.</div>", None
@@ -208,7 +233,8 @@ with gr.Blocks() as app:
                     text_content_out = gr.Textbox(label="Detected Text", interactive=False)
                     sentiment_out = gr.HTML()
                     # plot_out = gr.Plot(label="Probabilities")
-                    plot_out = gr.Label(label="Sentiment Probabilities")
+                    # plot_out = gr.Label(label="Sentiment Probabilities")
+                    plot_out = gr.HTML()
 
     # Connect button to function
     analyze_btn.click(
