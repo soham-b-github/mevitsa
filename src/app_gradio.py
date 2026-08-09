@@ -65,11 +65,6 @@ def setup_cloud_environment():
 print("Initializing environment...")
 setup_cloud_environment()
 
-@spaces.GPU
-def your_inference_function(image, text):
-    # Your model prediction code here...
-    return output
-
 
 # --- ENGINE INITIALIZATION ---
 def get_mevitsa_engine():
@@ -100,6 +95,7 @@ custom_css = f"""
 """
 
 # --- INFERENCE FUNCTION ---
+@spaces.GPU
 def analyze_image(img_path, use_auto_alpha, alpha_input, gcv_on, ft_on):
     if not img_path:
         return "No Image Provided", "", "<div style='color:red;'>Please upload an image first.</div>", None
