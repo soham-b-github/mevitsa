@@ -203,7 +203,7 @@ def toggle_alpha_visibility(auto_alpha):
 with gr.Blocks() as app:
     gr.HTML('<div class="decoration-bar"></div>')
     gr.Markdown("# MeViTSA: Multimodal Sentiment Analysis framework")
-    gr.Markdown("**Method: MeViTSA (Multimodal ensemble approach for Visuals Integrated Text Data for Sentiment Analysis)**")
+    gr.Markdown("## Method: MeViTSA (Multimodal Ensemble approach for Visuals Integrated Text Data for Sentiment Analysis)")
 
     with gr.Row():
         # SIDEBAR
