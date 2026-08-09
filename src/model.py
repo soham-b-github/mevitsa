@@ -10,8 +10,10 @@ from utils.data_loader import DatasetHandler
 
 class MeViTSA:
     def __init__(self, config):
-        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        # ALWAYS load models onto CPU during app startup
+        self.device = "cpu"
         self.config = config
+        self.models_on_gpu = False
         
         # Load vision and text branches
         self.v_model, self.v_preprocess = load_vision_branch(
@@ -30,7 +32,20 @@ class MeViTSA:
         self.dh = DatasetHandler(config.get('dataset_path', "./"))
         self.df = self.dh.load_metadata()
 
+    def _ensure_gpu(self):
+        """Move models to GPU on-demand inside the @spaces.GPU context."""
+        target_device = "cuda" if torch.cuda.is_available() else "cpu"
+        if not self.models_on_gpu and target_device == "cuda":
+            self.v_model = self.v_model.to(target_device)
+            self.t_model = self.t_model.to(target_device)
+            self.blip_model = self.blip_model.to(target_device)
+            self.device = target_device
+            self.models_on_gpu = True
+
     def analyze(self, image_pil, image_bytes, image_filename="", manual_alpha=None, gcv_api=True, ft=True):
+        # Dynamically shift models to CUDA now that @spaces.GPU is active
+        self._ensure_gpu()
+        
         # 1. Visual Pipeline (CLIP)
         img_tensor = self.v_preprocess(image_pil).unsqueeze(0).to(self.device)
         with torch.no_grad():
