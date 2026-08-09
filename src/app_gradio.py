@@ -159,8 +159,14 @@ def analyze_image(img_path, use_auto_alpha, alpha_input, gcv_on, ft_on):
         ).configure_view(
             strokeOpacity=0
         )
+        confidences = {
+            "Negative": float(res["probs"][0]),
+            "Neutral": float(res["probs"][1]),
+            "Positive": float(res["probs"][2])
+        }
 
-        return text_source, text_content, html_out, color_scale
+        # return text_source, text_content, html_out, color_scale
+        return text_source, text_content, html_out, confidences
 
     except Exception as e:
         return "Error", f"An error occurred: {str(e)}", f"<div style='color:red;'>Error during inference.</div>", None
@@ -201,7 +207,8 @@ with gr.Blocks() as app:
                     text_source_out = gr.Textbox(label="Status", interactive=False)
                     text_content_out = gr.Textbox(label="Detected Text", interactive=False)
                     sentiment_out = gr.HTML()
-                    plot_out = gr.Plot(label="Probabilities")
+                    # plot_out = gr.Plot(label="Probabilities")
+                    plot_out = gr.Label(label="Sentiment Probabilities")
 
     # Connect button to function
     analyze_btn.click(
