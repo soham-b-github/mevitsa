@@ -1,3 +1,5 @@
+import spaces
+import torch
 import gradio as gr
 import numpy as np
 from PIL import Image
@@ -62,6 +64,12 @@ def setup_cloud_environment():
 
 print("Initializing environment...")
 setup_cloud_environment()
+
+@spaces.GPU
+def your_inference_function(image, text):
+    # Your model prediction code here...
+    return output
+
 
 # --- ENGINE INITIALIZATION ---
 def get_mevitsa_engine():
@@ -165,7 +173,7 @@ def analyze_image(img_path, use_auto_alpha, alpha_input, gcv_on, ft_on):
 def toggle_alpha_visibility(auto_alpha):
     return gr.update(visible=not auto_alpha)
 
-with gr.Blocks(css=custom_css, theme=gr.themes.Monochrome()) as app:
+with gr.Blocks() as app:
     gr.HTML('<div class="decoration-bar"></div>')
     gr.Markdown("# MeViTSA: Multimodal Sentiment Analysis framework")
     gr.Markdown("**Method: MeViTSA (Multimodal ensemble approach for Visuals Integrated Text Data for Sentiment Analysis)**")
@@ -206,5 +214,6 @@ with gr.Blocks(css=custom_css, theme=gr.themes.Monochrome()) as app:
         outputs=[text_source_out, text_content_out, sentiment_out, plot_out]
     )
 
+
 if __name__ == "__main__":
-    app.launch()
+    app.launch(css=custom_css, theme=gr.themes.Monochrome())
