@@ -56,7 +56,8 @@ To run the application successfully, you must maintain the following file struct
 **How to get the models:**
 Please **contact the author** directly to request access to the trained model files. Once received, place them in the `src/trained/` folder before running the application.
 
-
+## Demo
+You may try the application yourself with any image. Please feel free to send us your feedback about the model responses. Here is the link for the application: [mevitsa-demo](https://soham-b-mevitsa-demo.hf.space)
 ## Installation
 
 1.  **Clone the repository**
