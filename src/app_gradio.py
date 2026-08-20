@@ -94,9 +94,16 @@ custom_css = f"""
 }}
 """
 
+# Helper function to process the file upload and extract the real filename.
+def handle_upload(uploaded_file):
+    if uploaded_file is None:
+        return None, "No file uploaded"
+    original_name = os.path.basename(uploaded_file.name)
+    return uploaded_file.name, original_name
+
 # --- INFERENCE FUNCTION ---
 @spaces.GPU
-def analyze_image(img_path, use_auto_alpha, alpha_input, gcv_on, ft_on):
+def analyze_image(img_path, original_filename, use_auto_alpha, alpha_input, gcv_on, ft_on):
     if not img_path:
         return "No Image Provided", "", "<div style='color:red;'>Please upload an image first.</div>", None
 
@@ -106,7 +113,8 @@ def analyze_image(img_path, use_auto_alpha, alpha_input, gcv_on, ft_on):
         img_byte_arr = io.BytesIO()
         image_pil.save(img_byte_arr, format='JPEG')
         image_bytes = img_byte_arr.getvalue()
-        image_filename = os.path.basename(img_path)
+        # image_filename = os.path.basename(img_path)
+        image_filename = original_filename
 
         # Resolve alpha
         manual_alpha = None if use_auto_alpha else alpha_input
@@ -224,7 +232,11 @@ with gr.Blocks() as app:
         with gr.Column(scale=3):
             with gr.Row():
                 with gr.Column():
-                    image_input = gr.Image(type="filepath", label="Upload an image")
+                    image_upload = gr.UploadButton("📁 Upload an Image", file_types=["image"], variant="primary")
+                    captured_filename = gr.Textbox(label="Original Filename", interactive=False, visible=True) # Set visible=False later if you want to hide it
+                    image_preview = gr.Image(label="Image Preview", interactive=False)
+                    
+                    # image_input = gr.Image(type="filepath", label="Upload an image")
                     analyze_btn = gr.Button("Run MeViTSA analysis", variant="primary")
                     
                 with gr.Column():
@@ -235,6 +247,12 @@ with gr.Blocks() as app:
                     # plot_out = gr.Plot(label="Probabilities")
                     # plot_out = gr.Label(label="Sentiment Probabilities")
                     plot_out = gr.HTML()
+
+    image_upload.upload(
+        fn=handle_upload, 
+        inputs=[image_upload], 
+        outputs=[image_preview, captured_filename]
+    )
 
     # Connect button to function
     analyze_btn.click(
