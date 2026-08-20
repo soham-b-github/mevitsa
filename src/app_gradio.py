@@ -255,9 +255,15 @@ with gr.Blocks() as app:
     )
 
     # Connect button to function
+    # analyze_btn.click(
+    #     fn=analyze_image,
+    #     inputs=[image_input, use_auto_alpha, alpha_input, gcv_on, ft_on],
+    #     outputs=[text_source_out, text_content_out, sentiment_out, plot_out]
+    # )
+    # Connect button to function
     analyze_btn.click(
         fn=analyze_image,
-        inputs=[image_input, use_auto_alpha, alpha_input, gcv_on, ft_on],
+        inputs=[image_preview, captured_filename, use_auto_alpha, alpha_input, gcv_on, ft_on],
         outputs=[text_source_out, text_content_out, sentiment_out, plot_out]
     )
 
