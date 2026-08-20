@@ -104,7 +104,7 @@ def handle_upload(uploaded_file):
 # --- INFERENCE FUNCTION ---
 @spaces.GPU
 def analyze_image(img_path, original_filename, use_auto_alpha, alpha_input, gcv_on, ft_on):
-    if not img_path:
+    if img_path is None:
         return "No Image Provided", "", "<div style='color:red;'>Please upload an image first.</div>", None
 
     try:
@@ -234,7 +234,7 @@ with gr.Blocks() as app:
                 with gr.Column():
                     image_upload = gr.UploadButton("📁 Upload an Image", file_types=["image"], variant="primary")
                     captured_filename = gr.Textbox(label="Original Filename", interactive=False, visible=True) # Set visible=False later if you want to hide it
-                    image_preview = gr.Image(label="Image Preview", interactive=False)
+                    image_preview = gr.Image(type="filepath", label="Image Preview", interactive=False)
                     
                     # image_input = gr.Image(type="filepath", label="Upload an image")
                     analyze_btn = gr.Button("Run MeViTSA analysis", variant="primary")
