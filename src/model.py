@@ -62,6 +62,9 @@ class MeViTSA:
                 source = "OCR (GCV)"
         else:
             # Fallback to CSV
+            print("Is self.df == None?", (self.df==None))
+            print("image_filename:", image_filename)
+            
             if self.df is not None and image_filename in self.df["filename"].values:
                 matched_row = self.df.loc[self.df["filename"] == image_filename].iloc[0]
                 ocr_text = matched_row.get("OCR", "")
